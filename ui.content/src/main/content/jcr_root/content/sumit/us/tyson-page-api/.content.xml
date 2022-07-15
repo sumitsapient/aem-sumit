@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-24T10:28:22.656+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/sumit/settings/wcm/templates/tyson-api"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Tyson Page API"
+        sling:resourceType="sumit/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sumit/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2022-03-24T10:24:35.308+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sumit/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:created="{Date}2022-03-24T10:25:12.745+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-24T10:25:24.712+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sumit/components/title"/>
+                <contentfragmentlist
+                    jcr:created="{Date}2022-03-24T10:25:17.619+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-24T10:28:22.646+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sumit/components/contentfragmentlist"
+                    modelPath="/conf/sumit/settings/dam/cfm/models/tyson-events"
+                    orderBy="jcr:created"
+                    parentPath="/content/dam/sumit/tyson-events"
+                    sortOrder="asc"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

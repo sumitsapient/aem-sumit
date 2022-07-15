@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:allowedTemplates="[/conf/sumit/settings/wcm/templates/(?!xf-).*]"
+        cq:allowedTemplates="/conf/sumit/settings/wcm/templates/(?!xf-).*"
         cq:conf="/conf/sumit"
+        cq:lastModified="{Date}2022-03-10T13:35:29.282+05:30"
+        cq:lastModifiedBy="admin"
         jcr:primaryType="cq:PageContent"
         jcr:title="Sumit Learning"
         sling:configRef="/conf/sumit"
-        sling:redirect="{Boolean}true"
+        sling:redirect="true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
         redirectTarget="/content/sumit/us/en">
@@ -16,4 +19,5 @@
         </image>
     </jcr:content>
     <us/>
+    <rep:policy/>
 </jcr:root>

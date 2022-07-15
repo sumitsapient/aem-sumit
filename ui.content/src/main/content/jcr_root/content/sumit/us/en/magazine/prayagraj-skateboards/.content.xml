@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-15T16:20:51.649+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-06-24T23:41:17.180+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Deactivate"
+        cq:tags="[we-retail:activity/swimming]"
+        cq:template="/conf/sumit/settings/wcm/templates/article-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Prayagraj Skateboards"
+        sling:resourceType="sumit/components/page"
+        navTitle="B Prayagraj Skateboards Navigation Title"
+        pageTitle="Prayagraj Skateboards"
+        socialMedia="[facebook,pinterest]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sumit/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2022-03-05T21:57:45.548+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sumit/components/container"
+                layout="responsiveGrid">
+                <image
+                    jcr:created="{Date}2022-03-05T21:58:40.413+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-06T22:14:58.620+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sumit/components/image"
+                    fileReference="/content/dam/wknd/en/magazine/la-skateparks/article_01_hero.png"/>
+                <container
+                    jcr:created="{Date}2022-03-05T22:03:22.969+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-05T22:03:53.945+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sumit/components/container">
+                    <_x0031__1646498611261
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="7"/>
+                    <title
+                        cq:styleIds="[1646900010402]"
+                        jcr:created="{Date}2022-03-05T22:17:57.256+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:17:57.256+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/title"/>
+                    <title_1193621214
+                        jcr:created="{Date}2022-03-05T22:18:04.454+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-06T22:14:29.874+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="By Goswamy"
+                        sling:resourceType="sumit/components/title"
+                        type="h4"/>
+                    <text
+                        jcr:created="{Date}2022-03-05T22:18:33.379+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-07T21:46:33.081+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/text"
+                        text="&lt;p>The most important part is to see what type of skateboard is the one for you. Here are a few tips to look at before you buy your skateboard:&lt;/p>&#xd;&#xa;&lt;p>Standard - See if you are a beginner, intermediate or an expert. For beginners - The skateboard for beginners is slightly smaller in size and the slanted bearings limit the speed to limit the risk of falling which is perfect for kids. It helps them learn to balance on the skateboard. For kids who want to learn a few tricks, the mid 3 beginners’ skateboard is perfect because of its steering components such as trucks, wheels, and bearings.&lt;/p>&#xd;&#xa;&lt;p>Technical Skateboards - The mid 5 skateboard is sturdy and helps the kids learn tricks and is perfect for intermediates as well. The team skateboard is dynamic, fast, manoeuvrable, and allows riders to perform all the tricks. This skateboard is designed for teenagers and adults who are experts in skateboarding.&lt;/p>&#xd;&#xa;&lt;p>Now buy skateboards online from our website!&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <text_1458202520
+                        jcr:created="{Date}2022-03-07T21:48:57.366+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-07T21:51:06.346+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/text"
+                        text="&lt;p>&amp;quot;There are no better place to skate than Prayagraj&amp;quot;&lt;/p>&#xd;&#xa;&lt;p>-MunshiChand, Pro Neta&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <byline
+                        jcr:created="{Date}2022-03-10T19:41:34.690+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-10T19:43:36.731+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/byline"
+                        fileName="women-03.jpg"
+                        name="Geeta Phogat"
+                        occupations="[Cricketer,Wrestler,Blogger,Actor]">
+                        <file/>
+                    </byline>
+                    <byline_1843639081
+                        jcr:created="{Date}2022-03-25T21:37:00.606+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-25T21:38:17.837+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/byline"
+                        fileName="men-02.jpg"
+                        name="Macha"
+                        occupations="[Fitness,Traveller]">
+                        <file/>
+                    </byline_1843639081>
+                    <titlewithlines
+                        jcr:created="{Date}2022-04-28T13:55:44.427+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-28T17:21:44.269+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="WKND Title - Article"
+                        sling:resourceType="sumit/components/titlewithlines"
+                        showLine="true"
+                        type="h1"/>
+                    <titlewithline
+                        cq:styleIds="[1651686849999]"
+                        jcr:created="{Date}2022-05-06T11:42:05.568+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-06T21:52:41.560+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sumit"
+                        sling:resourceType="sumit/components/titlewithline"
+                        subtitleSize="1rem"
+                        type="h1"/>
+                    <dgmodal
+                        jcr:created="{Date}2022-05-12T12:28:01.402+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-12T21:14:46.261+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/dgmodal"
+                        modalButton="Ship it"
+                        modalPickup="In-store DG Pickup"
+                        modalShipTo="Ship it to me"
+                        modalStore="Change store"
+                        modalTitle="How are you shopping today?"/>
+                    <contentfragment
+                        jcr:created="{Date}2022-05-12T21:31:52.036+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-12T21:50:08.511+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/contentfragment"
+                        displayMode="multi"
+                        elementNames="firstname"
+                        fragmentPath="/content/dam/sumit/sumit-details"
+                        paragraphScope="all"
+                        text="Sumit Details First Name Sumit"
+                        variationName="sumit_latest_details"/>
+                    <contentfragmentlist
+                        jcr:created="{Date}2022-05-12T21:54:54.259+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-12T21:56:12.420+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/contentfragmentlist"
+                        elementNames="firstname"
+                        maxItems="2"
+                        modelPath="/conf/sumit/settings/dam/cfm/models/aem-testing-new-model"
+                        orderBy="jcr:created"
+                        parentPath="/content/dam/sumit"
+                        sortOrder="asc"/>
+                    <aemgeek
+                        jcr:created="{Date}2022-05-22T21:44:49.084+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-14T11:55:55.839+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/aemgeek"
+                        author="HC VERMA"
+                        books="[Physics,Maths,English]"
+                        firstName="William"
+                        isShopByCategory="true"
+                        lastName="Shakespeare"
+                        professor="true"
+                        trackClick="false"
+                        trackItemName="Name"
+                        trackItemRegion="Attribute">
+                        <bookdetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                bookName="RD Sharma"
+                                published="2001"
+                                subject="Maths"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                bookName="Flamingo"
+                                published="1990"
+                                subject="English"/>
+                        </bookdetails>
+                        <bookdetailswithnestedmultifield jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                bookname="Kshitij"
+                                booksubject="Hindi">
+                                <bookeditons jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bookediton="3"
+                                        editondate="{Date}2022-05-19T00:00:00.000+05:30"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bookediton="2"
+                                        editondate="{Date}2022-05-27T00:00:00.000+05:30"/>
+                                </bookeditons>
+                            </item0>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                bookname="Pride &amp; Prejudice"
+                                booksubject="Literature">
+                                <bookeditons jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bookediton="1"
+                                        editondate="{Date}2022-05-13T00:00:00.000+05:30"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bookediton="1"
+                                        editondate="{Date}2022-05-18T00:00:00.000+05:30"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        bookediton="1"
+                                        editondate="{Date}2022-05-14T00:00:00.000+05:30"/>
+                                </bookeditons>
+                            </item1>
+                        </bookdetailswithnestedmultifield>
+                    </aemgeek>
+                    <aemgeekxmlexporter
+                        jcr:created="{Date}2022-05-28T23:16:11.006+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-28T23:17:29.525+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/aemgeekxmlexporter"
+                        author="HC Verma"
+                        firstName="Sumit"
+                        lastName="Yadav"
+                        professor="true">
+                        <bookdetails jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                bookName="RD Sharma"
+                                published="2001"
+                                subject="Maths"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                bookName="Flamingo"
+                                published="1990"
+                                subject="English"/>
+                        </bookdetails>
+                        <bookdetailswithnestedmultifield jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                bookname="Kshitij"
+                                booksubject="Hindi">
+                                <bookeditons jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bookediton="1"
+                                        editondate="{Date}2022-05-06T00:00:00.000+05:30"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        bookediton="2"
+                                        editondate="{Date}2022-05-05T00:00:00.000+05:30"/>
+                                </bookeditons>
+                            </item0>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                bookname="Pride &amp; Prejudice"
+                                booksubject="Literature">
+                                <bookeditons jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        bookediton="2"
+                                        editondate="{Date}2022-05-21T00:00:00.000+05:30"/>
+                                </bookeditons>
+                            </item1>
+                        </bookdetailswithnestedmultifield>
+                    </aemgeekxmlexporter>
+                    <videoteaser_2127156144
+                        jcr:created="{Date}2022-06-02T11:50:58.645+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-04T14:23:23.255+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/videoteaser"
+                        embeddableResourceType="core/wcm/components/embed/v1/embed/embeddable/youtube"
+                        youtubeVideoId="T_2euxE-_5Y"/>
+                    <aemgeekservice
+                        jcr:created="{Date}2022-06-04T16:49:01.833+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-04T16:49:01.833+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/aemgeekservice"/>
+                    <list
+                        jcr:created="{Date}2022-06-06T12:20:53.639+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-06T12:20:53.639+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/listehi/v1/list"/>
+                    <dgproducttile
+                        jcr:created="{Date}2022-06-09T22:53:37.350+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-09T22:53:46.280+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/dgproducttile"/>
+                    <basicform
+                        jcr:created="{Date}2022-06-12T23:45:49.895+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-12T23:45:49.895+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/basicform"/>
+                    <teaser
+                        jcr:created="{Date}2022-06-13T15:26:00.140+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-13T15:26:00.140+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/teaser"/>
+                    <embed
+                        jcr:created="{Date}2022-06-13T15:49:44.478+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-13T15:49:44.478+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/embed"/>
+                    <videoteaser
+                        jcr:created="{Date}2022-06-13T21:42:41.962+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-13T21:42:53.424+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/videoteaser"
+                        embeddableResourceType="core/wcm/components/embed/v1/embed/embeddable/youtube"
+                        youtubeVideoId="0RK4z_INJkg"/>
+                    <breadcrumb
+                        jcr:created="{Date}2022-06-14T12:08:22.742+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-14T12:08:22.742+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/breadcrumb"/>
+                    <reviewequipmentform
+                        jcr:created="{Date}2022-06-15T12:45:59.860+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-15T12:45:59.860+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="spectrum/buyflow-business/components/form/reviewEquipmentForm"
+                        billingAddressHeadline="Billing address with current provider"
+                        existingLineHeadline="Existing line details"
+                        lineEntryLabel="Review EquipmentForm"
+                        occurrence="/mo">
+                        <headerConditionalContainer
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="spectrum/buyflow-business/components/conditionalContainer"
+                            conditionType="reduxPath">
+                            <reviewEquipmentHeader
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Bold&quot;>&lt;span class=&quot;cmp-text--font-size-24&quot;>Unfortunately, financing was not approved at this time.&amp;nbsp;&lt;/span>&lt;/span>&lt;/p>&lt;p>&lt;span>The credit request was declined. The customer will receive a notice in the mail as required by the Fair Credit Reporting Act (FCRA).&lt;/span>&lt;/p>&lt;p>&lt;span>If they have any questions about why they are being asked to pay in full for Apple TV, call Spectrum Sales Support at ${salesTFN}.&lt;/span>&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                            <renderConditions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    comparison="equals"
+                                    comparisonValue="RESI-OTM"
+                                    invert="true"
+                                    matchType="matchExact"
+                                    operator="and"
+                                    reduxPath="session.salesChannel"/>
+                            </renderConditions>
+                        </headerConditionalContainer>
+                        <headerConditionalContainerOTM
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="spectrum/buyflow-business/components/conditionalContainer"
+                            conditionType="reduxPath">
+                            <reviewEquipmentHeader
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Bold&quot;>&lt;span class=&quot;cmp-text--font-size-24&quot;>Unfortunately, financing was not approved at this time.&amp;nbsp;&lt;/span>&lt;/span>&lt;/p>&lt;p>&lt;span>The credit request was declined. The customer will receive a notice in the mail as required by the Fair Credit Reporting Act (FCRA).&lt;/span>&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                            <renderConditions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    comparison="equals"
+                                    comparisonValue="RESI-OTM"
+                                    matchType="matchExact"
+                                    operator="and"
+                                    reduxPath="session.salesChannel"/>
+                            </renderConditions>
+                        </headerConditionalContainerOTM>
+                        <reviewEquipmentTextConditionalContainer
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="spectrum/buyflow-business/components/conditionalContainer"
+                            conditionType="reduxPath">
+                            <reviewEquipmentText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Bold&quot;>&lt;span class=&quot;cmp-text--font-size-24&quot;>Our credit services are currently unavailable.&amp;nbsp;&lt;/span>&lt;/span>&lt;/p>&lt;p>&lt;span>Try again later, or continue without financing. If the customer has any questions, call Spectrum Sales Support at ${salesTFN}.&lt;/span>&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                            <renderConditions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    comparison="equals"
+                                    comparisonValue="RESI-OTM"
+                                    invert="true"
+                                    matchType="matchExact"
+                                    operator="and"
+                                    reduxPath="session.salesChannel"/>
+                            </renderConditions>
+                        </reviewEquipmentTextConditionalContainer>
+                        <reviewEquipmentTextConditionalContainerOTM
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="spectrum/buyflow-business/components/conditionalContainer"
+                            conditionType="reduxPath">
+                            <reviewEquipmentText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Bold&quot;>&lt;span class=&quot;cmp-text--font-size-24&quot;>Our credit services are currently unavailable.&amp;nbsp;&lt;/span>&lt;/span>&lt;/p>&lt;p>&lt;span>Try again later, or continue without financing. If the customer has any questions, call Spectrum Sales Support at ${salesTFN}.&lt;/span>&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                            <renderConditions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    comparison="equals"
+                                    comparisonValue="RESI-OTM"
+                                    matchType="matchExact"
+                                    operator="and"
+                                    reduxPath="session.salesChannel"/>
+                            </renderConditions>
+                        </reviewEquipmentTextConditionalContainerOTM>
+                        <tvreceiverinfo
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="spectrum/buyflow-business/components/form/tvReceiverInfo"
+                            dvrBoxId="5011103"
+                            dvrBoxQuantity="4"
+                            hdBoxId="5013121"
+                            hdBoxQuantity="4"
+                            noSelectionErrorMessage="Please make an HD Box selection">
+                            <publicHeader
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Header"
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                id="hd-box-header"
+                                name="pb-hd-box-header"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-SemiBold&quot;>TV equipment&lt;/span>&lt;span class=&quot;cmp-text--required-text&quot;>Required&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <hdBoxBarAndRestHeader
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Header"
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                id="hd-box-bar-header"
+                                name="pb-hd-box-bar-header"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-SemiBold&quot;>TV equipment&lt;/span>&lt;span class=&quot;cmp-text--required-text&quot;>Required&lt;/span>&lt;/p> &lt;p>TV equipment is required with this plan. Choose up to nine HD Boxes.&lt;/p>"
+                                textIsRich="true"/>
+                            <hdBoxPublicText
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title=" "
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                name="hd-boxes-text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Regular&quot;>HD box&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <hdBoxText
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title=" "
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                name="hd-boxes-text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Regular&quot;>HD/DVR box&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <hdBoxSubText
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title=" "
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                name="hd-boxes-sub-text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Light&quot;>DVRs are available as an option with HD Boxes&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <hdBoxOptions
+                                cq:styleIds="[1604504374625]"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="$7.99/mo each"
+                                sling:resourceType="spectrum/buyflow-business/components/form/options"
+                                name="8155532"
+                                source="local"
+                                type="drop-down">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="true"
+                                        text="0"
+                                        value="0"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="1"
+                                        value="1"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="2"
+                                        value="2"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="3"
+                                        value="3"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="4"
+                                        value="4"/>
+                                </items>
+                            </hdBoxOptions>
+                            <privateHeader
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Header"
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                id="tv-dvr-header"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-SemiBold&quot;>TV equipment and DVR&lt;/span>&lt;span class=&quot;cmp-text--required-text&quot;>Required&lt;/span>&lt;/p> &lt;p>&lt;span class=&quot;cmp-text--font-family-Light&quot;>You will need at least one HD box or Apple TV per television. DVR is available with HD box(es).&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <privateHeaderBoxless
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Header"
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                id="tv-dvr-header-boxless"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-SemiBold&quot;>Equipment&lt;/span>&lt;span class=&quot;cmp-text--required-text&quot;>Required&lt;/span>&lt;/p> &lt;p>&lt;span class=&quot;cmp-text--font-family-Light&quot;>Enhance Spectrum TV with the following equipment.&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <dvrText
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title=" "
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                name="dvr-hd-box-text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Regular&quot;>DVR service (optional)&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <dvrSubText
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title=" "
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                name="dvr-hd-box-sub-text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Light&quot;>One DVR pairs with one HD Box&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <dvrPriceText
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title=" "
+                                sling:resourceType="spectrum/buyflow-business/components/text"
+                                name="dvr-hd-box-price-text"
+                                text="&lt;p>&lt;span class=&quot;cmp-text--font-family-Regular&quot;>$11.99/mo for 1 DVR&amp;nbsp;&lt;/span>&lt;/p> &lt;p>&lt;span class=&quot;cmp-text--font-family-Regular&quot;>$19.99/mo for 2-4 DVRs&lt;/span>&lt;/p> &lt;p>&lt;span class=&quot;cmp-text--font-family-Regular&quot;>$39.98/mo for 5-9 DVRs&lt;/span>&lt;/p>"
+                                textIsRich="true"/>
+                            <dvrOptions
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title=" "
+                                sling:resourceType="spectrum/buyflow-business/components/form/options"
+                                name="8155536"
+                                source="local"
+                                type="drop-down">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="true"
+                                        text="0"
+                                        value="0"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="1"
+                                        value="1"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="2"
+                                        value="2"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="3"
+                                        value="3"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="false"
+                                        text="4"
+                                        value="4"/>
+                                </items>
+                            </dvrOptions>
+                        </tvreceiverinfo>
+                        <appletv
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="spectrum/buyflow-business/components/form/appleTv"
+                            authoredMax="4"
+                            creditCheckText="A Credit Check will be required to approve financing."
+                            description=""
+                            detailsModal="/content/spectrum/buyflow-business/en/agent-smb/x-ref/apple-tv-terms-modal/jcr:content/root/responsivegrid/responsivegrid/modal"
+                            emptyPriceText="Pricing not available"
+                            freeQuantityId="1SXWRJFREE"
+                            headline="Apple Tv Offers"
+                            inverted="{Boolean}false"
+                            paymentsGroupLabel="Payment Type"
+                            shouldHideDisabled="{Boolean}true"
+                            showPayments="{Boolean}false"
+                            showPopOver="{Boolean}false"
+                            subHeader="Stream live or On Demand content using the Spectrum TV® App"
+                            textIsRich="[true]"
+                            title="Apple TV 4K">
+                            <quantityIdMap jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    quantityId="5013142"/>
+                            </quantityIdMap>
+                        </appletv>
+                        <dvrServices
+                            jcr:lastModified="{Date}2022-03-09T02:33:00.423-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="spectrum/buyflow-business/components/form/dvrServices"
+                            cloudDvrCheckboxLabel="Cloud DVR Plus"
+                            cloudDvrId="111QH6H"
+                            cloudDvrMonthlyPricingLabel="for 50 shows"
+                            cloudDvrPlusId="19LQUM"
+                            cloudDvrPlusPriceLabelDesc="for 100 shows"
+                            cloudDvrPlusSubHeader="Record up to 100 shows. Recordings are available for one year."
+                            cloudDvrPriceLabelDesc="for 100 shows"
+                            cloudDvrSubHeader="Record up to 50 shows. Recordings are available for 90 days."
+                            heading="Services"
+                            optional="optional"
+                            subheading="Enhance Spectrum TV with the following service."
+                            talkingGuideCheckboxLabel="Talking Guide"
+                            talkingGuideId="5014101"
+                            talkingGuidePriceLabel="No additional cost"
+                            talkingGuideSubHeader="Explore Spectrum TV with full text-to-speech support of the TV guide, On Demand and more."
+                            tvCloudDvrCheckboxLabel="Cloud DVR"
+                            tvCloudDvrSubHeader="Cloud DVR service allows customers to record live shows to watch wherever and whenever they want."
+                            xrefTalkingGuide="/content/spectrum/buyflow-business/en/content-resi/x-ref-resi/talking-guide-details/jcr:content/root/responsivegrid/responsivegrid/modal"/>
+                        <installationOptionsError
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="spectrum/buyflow-business/components/text"
+                            text="&lt;div class=&quot;cmp-form-options__label cmp-form-options--error-label&quot;>Please choose one installation option&lt;/div>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </reviewequipmentform>
+                    <test
+                        jcr:created="{Date}2022-06-15T21:28:33.794+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-15T21:28:44.394+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/test"
+                        file="/conf"
+                        text="Sumit"/>
+                    <dummy
+                        jcr:created="{Date}2022-06-20T17:44:16.938+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-20T17:44:16.938+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/dummy">
+                        <container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys">
+                            <text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="sumit/components/text"/>
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="sumit/components/title"/>
+                            <byline
+                                jcr:created="{Date}2022-06-20T17:47:28.942+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-06-20T17:47:28.942+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="sumit/components/byline"/>
+                            <titlewithline
+                                cq:styleIds="[1651686799164]"
+                                jcr:created="{Date}2022-06-20T18:15:40.239+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-06-20T18:15:40.239+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="sumit/components/titlewithline"/>
+                        </container>
+                    </dummy>
+                    <dummy_1409296941
+                        jcr:created="{Date}2022-06-24T22:29:31.158+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-24T22:29:31.158+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/dummy"/>
+                    <caware
+                        jcr:created="{Date}2022-06-25T14:40:23.398+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-25T14:40:23.398+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/caware"/>
+                    <iconcalloutbox_1170206788
+                        jcr:created="{Date}2022-07-15T12:55:16.987+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-15T16:20:51.615+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/iconcalloutbox"
+                        icon="Learning"
+                        text="The most important part is to see what type of skateboard is the one for you. Here are a few tips to look at before you buy your skateboard. This text contains one hundred."/>
+                </container>
+                <container_1359749927
+                    jcr:created="{Date}2022-03-05T22:04:19.899+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-05T22:06:17.788+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sumit/components/container">
+                    <title
+                        jcr:created="{Date}2022-03-05T22:19:00.174+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:19:26.027+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Share this story"
+                        sling:resourceType="sumit/components/title"
+                        type="h5"/>
+                    <sharing
+                        jcr:created="{Date}2022-03-05T22:19:59.263+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:19:59.263+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/sharing"/>
+                    <separator
+                        jcr:created="{Date}2022-03-05T22:20:05.682+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:20:05.682+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/separator"/>
+                    <download
+                        jcr:created="{Date}2022-03-05T22:21:04.095+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Download PDF&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-03-07T21:54:56.021+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/download"
+                        descriptionFromAsset="false"
+                        fileReference="/content/dam/wknd/en/magazine/la-skateparks/UltimateGuidetoLASkateParks.pdf"
+                        inline="false"
+                        textIsRich="true"
+                        titleFromAsset="true"/>
+                    <list
+                        jcr:created="{Date}2022-03-05T22:21:28.660+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-07T21:56:03.220+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/list"
+                        childDepth="1"
+                        linkItems="true"
+                        listFrom="children"
+                        parentPage="/content/sumit/us/en/magazine"
+                        showDescription="false"
+                        showModificationDate="true"
+                        sortOrder="asc"
+                        tagsMatch="any"/>
+                </container_1359749927>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

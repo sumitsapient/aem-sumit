@@ -2,21 +2,22 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="Sumit Learning"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
-        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
-        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2022-05-24T09:54:51.564+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[core-components-examples:component-type/template]"
         cq:template="/conf/sumit/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home"
         sling:resourceType="sumit/components/page"
-    >
+        pageTitle="Home">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="sumit/components/container"
             layout="responsiveGrid">
             <container
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="sumit/components/container">
+                sling:resourceType="sumit/components/container"
+                layout="responsiveGrid">
                 <title
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="sumit/components/title"/>
@@ -24,60 +25,21 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="sumit/components/container"
                     layout="responsiveGrid">
-                    <teaser
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                    <locationlist
+                        jcr:created="{Date}2022-05-23T12:40:19.806+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-24T09:54:51.562+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="sumit/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser>
-                    <teaser_copy
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="sumit/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy>
-                    <teaser_copy_1579324932
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="sumit/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy_1579324932>
-                    <helloworld
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="sumit/components/helloworld"
-                        text="lalala :)"/>
+                        sling:resourceType="sumit/components/locationlist"
+                        layoutType="standard"/>
                 </container>
             </container>
         </root>
     </jcr:content>
+    <magazine/>
+    <adventures/>
+    <faqs/>
+    <about-us/>
+    <tools/>
 </jcr:root>

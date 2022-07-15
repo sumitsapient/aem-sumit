@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-06-23T18:42:14.855+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/sumit/settings/wcm/templates/article-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Test"
+        jcr:uuid="70b1c848-18a3-4c65-b8ba-efb424625567"
+        sling:resourceType="sumit/components/page"
+        approver1="Sumit"
+        approver2="Admin"
+        eventhandlertask="Event CHANGED by sumitserviceuser"
+        socialMedia="[facebook,pinterest]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sumit/components/container"
+            eventhandlertask="Event CHANGED by sumitserviceuser"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2022-03-05T21:57:45.548+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sumit/components/container"
+                eventhandlertask="Event CHANGED by sumitserviceuser"
+                layout="responsiveGrid">
+                <image
+                    jcr:created="{Date}2022-03-05T21:58:40.413+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-05T22:00:11.220+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sumit/components/image"
+                    eventhandlertask="Event CHANGED by sumitserviceuser"/>
+                <container
+                    jcr:created="{Date}2022-03-05T22:03:22.969+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-05T22:03:53.945+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sumit/components/container"
+                    eventhandlertask="Event CHANGED by sumitserviceuser">
+                    <_x0031__1646498611261
+                        jcr:primaryType="nt:unstructured"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"
+                        offset="0"
+                        width="7"/>
+                    <title
+                        jcr:created="{Date}2022-03-05T22:17:57.256+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:17:57.256+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/title"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"/>
+                    <title_1193621214
+                        jcr:created="{Date}2022-03-05T22:18:04.454+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:18:25.186+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="By Author"
+                        sling:resourceType="sumit/components/title"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"
+                        type="h4"/>
+                    <text
+                        jcr:created="{Date}2022-03-05T22:18:33.379+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:18:33.379+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/text"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"/>
+                </container>
+                <container_1359749927
+                    jcr:created="{Date}2022-03-05T22:04:19.899+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-05T22:06:17.788+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sumit/components/container"
+                    eventhandlertask="Event CHANGED by sumitserviceuser">
+                    <title
+                        jcr:created="{Date}2022-03-05T22:19:00.174+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:19:26.027+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Share this story"
+                        sling:resourceType="sumit/components/title"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"
+                        type="h5"/>
+                    <sharing
+                        jcr:created="{Date}2022-03-05T22:19:59.263+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:19:59.263+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/sharing"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"/>
+                    <separator
+                        jcr:created="{Date}2022-03-05T22:20:05.682+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:20:05.682+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/separator"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"/>
+                    <download
+                        jcr:created="{Date}2022-03-05T22:21:04.095+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:21:04.095+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/download"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"/>
+                    <list
+                        jcr:created="{Date}2022-03-05T22:21:28.660+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-05T22:21:28.660+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sumit/components/list"
+                        eventhandlertask="Event CHANGED by sumitserviceuser"/>
+                </container_1359749927>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
