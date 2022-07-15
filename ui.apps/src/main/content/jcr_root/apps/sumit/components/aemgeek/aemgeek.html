@@ -1,0 +1,29 @@
+<div class="cmp-aemgeek"
+  data-sly-use.geek="com.aem.sumit.core.models.AemGeek"
+  data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.name="${geek.firstName}">
+   <div>FirstName: ${geek.firstName}</div>
+   <div>LastName:${geek.lastName}</div>
+   <div>Is Professor:${geek.professor}</div>
+   <div>Cuurent Page:${geek.pageTitle}</div>
+   <b>Nested MultifieldBook Detail</b>
+
+    <!--/* Iterate over books */-->
+    <ul data-sly-list.book="${geek.bookDetails}">
+        <li> Book Name: ${book.bookname}</li>
+        <li> Book Subject: ${book.booksubject}</li>
+        <li>Editions:
+
+            <!--/* Iterate over editions */-->
+            <ul data-sly-list.edition="${book.bookeditons}">
+                <li>No of Edition: ${edition.bookediton}</li>
+                <li>Edition Date: ${edition.editondate}</li>
+            </ul>
+        </li>
+    </ul>
+    <b>Sling Model Exporters: </b><br/>
+    <a href="http://localhost:4502/content/sumit/us/en/magazine/prayagraj-skateboards/jcr:content/root/container/container/aemgeek.model.xml" target="_blank">JAXB XML Exporter</a><br/>
+    <a href="http://localhost:4502/content/sumit/us/en/magazine/prayagraj-skateboards/jcr:content/root/container/container/aemgeek.geek.json" target="_blank">Jackson Json Exporter</a>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=!name, classAppend='cmp-aemgeek'}"></sly>
+

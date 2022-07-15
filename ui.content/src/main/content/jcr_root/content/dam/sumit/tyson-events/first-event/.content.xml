@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="f3caf9b7-712e-42c2-b09a-31012478d0e8">
+    <jcr:content
+        cq:name="first-event"
+        cq:parentPath="/content/dam/sumit/tyson-events"
+        jcr:description="This is first Event"
+        jcr:lastModified="{Date}2022-03-24T10:05:05.290+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="First Event"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-03-24T10:05:05.292+05:30">
+        <data
+            cq:model="/conf/sumit/settings/dam/cfm/models/tyson-events"
+            jcr:primaryType="nt:unstructured">
+            <master
+                cq:tags="[we-retail:activity/biking]"
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                eventTtitle="Biking Tyson Event"
+                eventTtitle_x0040_LastModified="{Date}2022-03-24T10:05:05.219+05:30"
+                eventType="[we-retail:activity/biking]"
+                eventType_x0040_LastModified="{Date}2022-03-24T10:05:05.220+05:30"
+                startDate="{Date}2022-03-12T09:58:00.000+05:30"
+                startDate_x0040_LastModified="{Date}2022-03-24T10:05:05.221+05:30"/>
+        </data>
+        <metadata
+            cq:tags="[properties:style/color]"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

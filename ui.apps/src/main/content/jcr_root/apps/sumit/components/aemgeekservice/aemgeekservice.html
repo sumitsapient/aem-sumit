@@ -1,0 +1,24 @@
+<div class="cmp-aemgeek__service"
+  data-sly-use.geek="com.aem.sumit.core.models.AemGeekServiceModel"
+  data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+    <!--/* Iterate over pages */-->
+    <b>Printing child pages using OSGI Service in Sling Model</b>
+    <ul data-sly-list.item="${geek.pages}">
+        <li> Page Title: ${item.title}</li>
+    </ul>
+    <b>Printing configurable OSGI Service(AEM Geek OSGi Configuration) values in Sling Model</b>
+    <p>Service Name: ${geek.serviceName}</p>
+    <p>Service Count: ${geek.serviceCount}</p>
+    <p>Service Live: ${geek.liveData}</p>
+    <p>Service Countries: ${geek.countries}</p>
+    <p>Service RunModes: ${geek.runModes}</p>
+
+    <b>Printing configurable OSGI Factory Service(AEM Geek Factory Config) values in Sling Model</b>
+    <ul data-sly-list.item="${geek.allConfig}">
+        <li> ID: ${item.serviceID}</li>
+        <li> Name: ${item.serviceURL}</li>
+        <li> URL: ${item.serviceName}</li>
+    </ul>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=true, classAppend='cmp-aemgeek'}"></sly>
+

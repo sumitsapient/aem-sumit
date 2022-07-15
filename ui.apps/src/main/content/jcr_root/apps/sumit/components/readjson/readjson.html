@@ -1,0 +1,10 @@
+
+<!--/* byline.html */-->
+<div data-sly-use.byline="com.aem.sumit.core.models.ReadJsonService" 
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+
+    class="cmp-byline">
+<h2>${byline.data}</h2>
+
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>

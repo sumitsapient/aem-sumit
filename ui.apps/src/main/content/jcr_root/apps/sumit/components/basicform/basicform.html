@@ -1,0 +1,18 @@
+<b>Below form requests a servlet that is registered by ResourceType</b>
+<form method="POST" action="${currentPage.path}/jcr:content.test.txt">
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<b>Below form requests a servlet that is registered by Path</b>
+<form method="POST" action="/geeks/pages/">
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname1" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname1" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>

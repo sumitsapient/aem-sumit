@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="nt:folder">
+    <grid-cards.generalTab.cardDesign.below.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.cardDesign.below.text"
+        sling:message="Below"/>
+    <grid-cards.generalTab.cardDesign.blackOverlay.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.cardDesign.blackOverlay.text"
+        sling:message="Black Overlay"/>
+    <grid-cards.generalTab.cardDesign.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.cardDesign.fieldDescription"
+        sling:message="Style of the card in the component. Applies to both the hero and the grid items."/>
+    <grid-cards.generalTab.cardDesign.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.cardDesign.fieldLabel"
+        sling:message="Card Design"/>
+    <grid-cards.generalTab.heroCardPosition.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.heroCardPosition.fieldDescription"
+        sling:message="Position of the hero card in the component."/>
+    <grid-cards.generalTab.heroCardPosition.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.heroCardPosition.fieldLabel"
+        sling:message="Hero Card Position."/>
+    <grid-cards.generalTab.heroCardPosition.left.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.heroCardPosition.left.text"
+        sling:message="Left"/>
+    <grid-cards.generalTab.heroCardPosition.right.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.heroCardPosition.right.text"
+        sling:message="Right"/>
+    <grid-cards.generalTab.jcrTitle
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.generalTab.jcrTitle"
+        sling:message="General"/>
+    <grid-cards.gridItems.gridItems.ctaFieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.ctaFieldDescription"
+        sling:message="Optional CTA button for the item. When not available, the title will become the CTA."/>
+    <grid-cards.gridItems.gridItems.ctaFieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.ctaFieldLabel"
+        sling:message="Label: CTA"/>
+    <grid-cards.gridItems.gridItems.heroFieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.heroFieldDescription"
+        sling:message="If the hero link will open in the same or a new tab."/>
+    <grid-cards.gridItems.gridItems.heroFieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.heroFieldLabel"
+        sling:message="Target: Item"/>
+    <grid-cards.gridItems.gridItems.imageAltTextDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.imageAltTextDescription"
+        sling:message="Alt text for the hero item image."/>
+    <grid-cards.gridItems.gridItems.imageAltTextFieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.imageAltTextFieldLabel"
+        sling:message="Alt Text: Image"/>
+    <grid-cards.gridItems.gridItems.itemFieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.itemFieldDescription"
+        sling:message="Title for the item."/>
+    <grid-cards.gridItems.gridItems.itemFieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.itemFieldLabel"
+        sling:message="Label: Item Title"/>
+    <grid-cards.gridItems.gridItems.urlFieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.urlFieldDescription"
+        sling:message="URL to take the user when clicking the item."/>
+    <grid-cards.gridItems.gridItems.urlFieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.gridItems.urlFieldLabel"
+        sling:message="Label: Item Title"/>
+    <grid-cards.gridItems.jcrTitle
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItems.jcrTitle"
+        sling:message="Grid Items"/>
+    <grid-cards.gridItemsTab.gridItems.field.column.altImageText.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.altImageText.fieldDescription"
+        sling:message="Alt text for the item image."/>
+    <grid-cards.gridItemsTab.gridItems.field.column.altImageText.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.altImageText.fieldLabel"
+        sling:message="Alt Text: Image"/>
+    <grid-cards.gridItemsTab.gridItems.field.column.image.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.image.fieldDescription"
+        sling:message="Image for the grid item."/>
+    <grid-cards.gridItemsTab.gridItems.field.column.image.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.image.fieldLabel"
+        sling:message="Image"/>
+    <grid-cards.gridItemsTab.gridItems.field.column.labelCTA.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.labelCTA.fieldDescription"
+        sling:message="Optional CTA button for the item. When not available, the title will become the CTA."/>
+    <grid-cards.gridItemsTab.gridItems.field.column.labelCTA.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.labelCTA.fieldLabel"
+        sling:message="Label: CTA"/>
+    <grid-cards.gridItemsTab.gridItems.field.column.labelItemTitle.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.labelItemTitle.fieldDescription"
+        sling:message="Title for the item."/>
+    <grid-cards.gridItemsTab.gridItems.field.column.labelItemTitle.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.labelItemTitle.fieldLabel"
+        sling:message="Label: Item Title"/>
+    <grid-cards.gridItemsTab.gridItems.field.column.pathItem.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.pathItem.fieldDescription"
+        sling:message="URL to take the user when clicking the item."/>
+    <grid-cards.gridItemsTab.gridItems.field.column.pathItem.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.pathItem.fieldLabel"
+        sling:message="Path: Item"/>
+    <grid-cards.gridItemsTab.gridItems.field.column.targetItem.currentTab.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.targetItem.currentTab.text"
+        sling:message="Current Tab"/>
+    <grid-cards.gridItemsTab.gridItems.field.column.targetItem.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.targetItem.fieldDescription"
+        sling:message="If the item link will open in the same or a new tab."/>
+    <grid-cards.gridItemsTab.gridItems.field.column.targetItem.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.targetItem.fieldLabel"
+        sling:message="Target: Item"/>
+    <grid-cards.gridItemsTab.gridItems.field.column.targetItem.newTab.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.field.column.targetItem.newTab.text"
+        sling:message="New Tab"/>
+    <grid-cards.gridItemsTab.gridItems.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.gridItems.fieldLabel"
+        sling:message="Grid Items"/>
+    <grid-cards.gridItemsTab.labelGridItemLink.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.labelGridItemLink.fieldDescription"
+        sling:message="Optional label for the link under the title."/>
+    <grid-cards.gridItemsTab.labelGridItemLink.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.labelGridItemLink.fieldLabel"
+        sling:message="Label: Grid Items Link"/>
+    <grid-cards.gridItemsTab.pathGridItemLink.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.pathGridItemLink.fieldDescription"
+        sling:message="Optional URL for the link under the title."/>
+    <grid-cards.gridItemsTab.pathGridItemLink.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.pathGridItemLink.fieldLabel"
+        sling:message="Path: Grid Items Link"/>
+    <grid-cards.gridItemsTab.targetGridItemLink.currentTab.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.targetGridItemLink.currentTab.text"
+        sling:message="Current Tab"/>
+    <grid-cards.gridItemsTab.targetGridItemLink.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.targetGridItemLink.fieldDescription"
+        sling:message="If the link will open in the same or a new tab."/>
+    <grid-cards.gridItemsTab.targetGridItemLink.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.targetGridItemLink.fieldLabel"
+        sling:message="Target: Grid Items Link"/>
+    <grid-cards.gridItemsTab.targetGridItemLink.newTab.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.targetGridItemLink.newTab.text"
+        sling:message="New Tab"/>
+    <grid-cards.gridItemsTab.titleGridItem.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.titleGridItem.fieldDescription"
+        sling:message="Optional title for the grid items."/>
+    <grid-cards.gridItemsTab.titleGridItem.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.gridItemsTab.titleGridItem.fieldLabel"
+        sling:message="Title: Grid Items"/>
+    <grid-cards.heroTab.altImageText.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.altImageText.fieldDescription"
+        sling:message="Alt text for the hero item image."/>
+    <grid-cards.heroTab.altImageText.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.altImageText.fieldLabel"
+        sling:message="Alt Text: Image"/>
+    <grid-cards.heroTab.image.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.image.fieldDescription"
+        sling:message="Image for the hero item."/>
+    <grid-cards.heroTab.image.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.image.fieldLabel"
+        sling:message="Image"/>
+    <grid-cards.heroTab.jcrTitle
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.jcrTitle"
+        sling:message="Hero"/>
+    <grid-cards.heroTab.labelCTA.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.labelCTA.fieldDescription"
+        sling:message="Optional CTA button for the hero item. When not available, the title will become the CTA."/>
+    <grid-cards.heroTab.labelCTA.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.labelCTA.fieldLabel"
+        sling:message="Label: CTA"/>
+    <grid-cards.heroTab.labelHeroTitle.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.labelHeroTitle.fieldDescription"
+        sling:message="Title for the hero item."/>
+    <grid-cards.heroTab.labelHeroTitle.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.labelHeroTitle.fieldLabel"
+        sling:message="Label: Hero Title"/>
+    <grid-cards.heroTab.pathItem.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.pathItem.fieldDescription"
+        sling:message="URL to take the user when clicking the hero."/>
+    <grid-cards.heroTab.pathItem.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.pathItem.fieldLabel"
+        sling:message="Path: Item"/>
+    <grid-cards.heroTab.targetItem.currentTab.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.targetItem.currentTab.text"
+        sling:message="Current Tab"/>
+    <grid-cards.heroTab.targetItem.fieldDescription
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.targetItem.fieldDescription"
+        sling:message="If the hero link will open in the same or a new tab."/>
+    <grid-cards.heroTab.targetItem.fieldLabel
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.targetItem.fieldLabel"
+        sling:message="Target: Item"/>
+    <grid-cards.heroTab.targetItem.newTab.text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.heroTab.targetItem.newTab.text"
+        sling:message="New Tab"/>
+    <grid-cards.jcrTitle
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="grid-cards.jcrTitle"
+        sling:message="Grid Cards"/>
+</jcr:root>

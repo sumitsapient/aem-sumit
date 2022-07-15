@@ -1,0 +1,18 @@
+<sly data-sly-use.locationListModel="com.aem.sumit.core.models.LocationListModel">
+    <sly data-sly-test.empty="${locationListModel.empty}"/>
+    <sly data-sly-test="${empty && wcmmode.edit}">
+        <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+             data-sly-call="${template.placeholder @ isEmpty=empty, classAppend=''}">
+        </sly>
+    </sly>
+    <sly data-sly-test="${locationListModel.layoutType == 'standard' && !empty}">
+        <sly data-sly-use.locationListTmpl="/apps/sumit/components/locationlist/locationlist-standard.html"
+             data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+             data-sly-call="${locationListTmpl.template @locationList=locationListModel}"/>
+    </sly>
+    <sly data-sly-test="${locationListModel.layoutType != 'standard' && !empty}">
+        <sly data-sly-use.locationListTmpl="/apps/sumit/components/locationlist/locationlist-alternative.html"
+             data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+             data-sly-call="${locationListTmpl.template @locationList=locationListModel}"/>
+    </sly>
+</sly>

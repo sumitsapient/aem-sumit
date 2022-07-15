@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2021-12-30T20:00:00.841+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/sumit/settings/wcm/templates/sumit-content-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="sumit/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sumit/components/container"
+            layout="responsiveGrid">
+            <experiencefragment
+                jcr:created="{Date}2021-12-30T19:56:52.809+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-30T19:57:28.080+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sumit/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/sumit/us/en/site/header/master"/>
+            <title
+                jcr:created="{Date}2021-12-30T20:00:00.825+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-30T20:00:00.825+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sumit/components/title"/>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sumit/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+            <experiencefragment_1484485413
+                jcr:created="{Date}2021-12-30T19:57:07.957+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-30T19:57:55.806+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sumit/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/sumit/us/en/site/footer/master"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

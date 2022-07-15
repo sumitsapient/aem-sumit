@@ -1,0 +1,41 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+<div  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+      class="cmp-dgmodal">
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#dgModal">
+        Launch DG Modal
+      </button>
+      <!-- Modal -->
+    <div class="modal fade" id="dgModal" tabindex="-1" aria-labelledby="dgModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <p class="cmp-dgmodal__close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </p>
+        
+        <div class="cmp-dgmodal__title">
+          <p class="cmp-dgmodal__title--text" id="dgModalLabel">${properties.modalTitle}</p>
+        </div>
+        <div class="modal-body cmp-dgmodal__pickup">
+          <p class="cmp-dgmodal__pickup--text"><i class="bi bi-shop mx-2 text-warning"></i>${properties.modalPickup}</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.151701250049!2d-97.03879278568446!3d34.295678012311306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8dc6640437ccb%3A0xfae64c3208b2f2f1!2sDollar%20General%20Distribution%20Center!5e0!3m2!1sen!2sin!4v1652350114206!5m2!1sen!2sin" width="420" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p class="cmp-dgmodal__pickup--btn"><button type="button" class="btn btn-outline-secondary">${properties.modalStore}</button></p>
+          
+        </div>
+        <div class="modal-body cmp-dgmodal__ship">
+            <p class="cmp-dgmodal__ship--text"><i class="bi bi-truck  mx-2 text-warning"></i>${properties.modalShipTo}</p>
+            <div class="cmp-dgmodal__ship--section">
+              <button type="button" class="btn cmp-dgmodal__ship--button">${properties.modalButton}</button>
+            </div>
+            
+          </div>
+      </div>
+     </div>
+     </div>
+   </div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty = !modalTitle}"></sly>
+<!-- Button trigger modal -->
+
+

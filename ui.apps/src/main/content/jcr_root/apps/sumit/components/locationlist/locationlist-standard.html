@@ -1,0 +1,75 @@
+<template data-sly-template.template="${@
+    locationList
+}">
+    <div data-sly-test="${locationList.topLocationMap}">
+        <!-- TOP CITIES -->
+        <section class="band location-band region-list">
+            <div>
+                <div class="cf">
+                    <h2>${'locations_0032' @ i18n}</h2>
+                    <ul data-sly-list.city="${locationList.topLocationMap.entrySet}">
+                        <li>
+                            <a href="${city.value @ extension = 'html'}">
+                                ${city.key}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-sly-test="${locationList.airportLocations}">
+        <!-- AIRPORT LOCATIONS -->
+        <section class="band location-band region-list">
+            <div>
+                <div class="cf">
+                    <h2>${'locations_0043' @ i18n}</h2>
+                    <ul data-sly-list.child="${locationList.airportLocations}">
+                        <li>
+                            <a href="${child.url  @ context='unsafe'}">
+                                ${child.title}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-sly-test="${locationList.exoticsLocations}">
+        <!-- EXOTICS LOCATIONS -->
+        <section class="band location-band region-list">
+            <div>
+                <div class="cf">
+                    <h2>${'locations_0050' @ i18n}</h2>
+                    <ul data-sly-list.child="${locationList.exoticsLocations}">
+                        <li>
+                            <a href="${child.url  @ context='unsafe'}">
+                                ${child.title}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-sly-test="${locationList.nonAirportLocations}">
+        <!-- NON-AIRPORT LOCATIONS -->
+        <section class="band location-band region-list">
+            <div>
+                <div class="cf">
+                    <h2>${'resflowlocations_0066' @ i18n}</h2>
+                    <ul data-sly-list.child="${locationList.nonAirportLocations}">
+                        <li>
+                            <a href="${child.url  @ context='unsafe'}">
+                                ${child.title}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>

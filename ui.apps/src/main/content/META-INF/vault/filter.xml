@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/sumit/clientlibs"/>
+    <filter root="/apps/sumit/components"/>
+    <filter root="/apps/sumit/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,37 @@
+.cmp-dgmodal{
+    .cmp-dgmodal__title{
+        border: 0;
+        padding-bottom: 1px;
+        
+        &--text{
+            text-align: center;
+        }
+    }
+    .cmp-dgmodal__pickup,.cmp-dgmodal__ship{
+        margin: 0 20px 0 20px;
+        border: 1px solid #dee2e6;
+    }
+    .cmp-dgmodal__pickup{
+        &--btn{
+            text-align: right;
+            margin-top: 5px;
+        }
+    }                                              
+    .cmp-dgmodal__ship{
+        margin:20px;
+        &--section{
+            text-align: right;
+        }
+    }
+    .cmp-dgmodal__close{
+        text-align: right;
+        margin: 4px 10px 0 0;
+        color: black;
+    }
+   .cmp-dgmodal__ship--button{
+        background-color: #f5e800;
+        width: 120px;
+
+   }
+  
+}

@@ -1,0 +1,45 @@
+<!--/* Displaying the component title only in author mode */-->
+<div class="aem-author-badge" data-sly-test="${wcmmode.edit}"><span>${component.title}</span></div>
+
+<!--/* Using the sling model to retrieve the multifield items (gallery items) */-->
+<sly data-sly-use.gridImagesMultifield="${'com.aem.sumit.core.models.GridCardsModel' @ field='gridItems'}" />
+<div>
+ <div class="cmp-grid-cards--container ${properties.cardDesign=='below' ? 'default' : 'dark'}">
+   <div class="container">
+      <div class="cmp-grid-cards__section pt-5 pb-5">
+         <div class="row ${properties.heroPosition=='right' ? 'flex-row-reverse' : ''}">
+             <sly data-sly-include="hero-card.html"></sly>
+            <div class="col-md-6">
+               <div class="cmp-grid-cards--parts">
+                  <div class="cmp-grid-cards--parts-header d-flex">
+                     <sly data-sly-test="${properties.gridItemsTitle}">
+                     <div class="parts-header--title">
+                        ${properties.gridItemsTitle}
+                     </div>
+                     </sly>
+                     <sly data-sly-test="${properties.gridItemsLinkLabel && properties.gridItemsLinkUrl }"></sly> <a href="${properties.gridItemsLinkUrl @ context = 'uri'}" target="${properties.gridItemsLinkTarget=='newTab' ? '_blank' : '_self'}" class="parts-header--cta">${properties.gridItemsLinkLabel}</a>
+                  </div>
+                  <div class="parts-cards d-flex flex-wrap row">
+                     <div class="parts-card col-sm-6" data-sly-repeat.grid="${gridImagesMultifield.items}">
+                        <div class="parts-card--image"> <img loading="lazy" data-src="${grid.image @ context = 'uri'}" alt="${grid.imageAltText||grid.itemTitle}" class="img-fluid"/>
+                        </div>
+                        <div class="parts-card--titlencta d-flex">
+                           <sly data-sly-test="${!grid.itemCTA}"><a class="card-cta" target="${grid.itemTarget=='newTab' ? '_blank' : '_self'}" href="${grid.itemUrl @ context = 'uri'}"><div class="parts-card--title d-flex">${grid.itemTitle}</div></a></sly>
+                           <sly data-sly-test="${grid.itemCTA}"><div class="parts-card--title">${grid.itemTitle}</div></sly>
+         
+                           <a class="card-cta d-flex align-items-center" target="${grid.itemTarget=='newTab' ? '_blank' : '_self'}" href="${grid.itemUrl @ context = 'uri'}">
+                           <span class="cmp-grid-cards-grid-cta">${grid.itemCTA}</span>
+                           <span><i class="cta-secondary arrow__right mx-4 mx-sm-0"></i></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+  </div>
+</div>
+</sly>
+

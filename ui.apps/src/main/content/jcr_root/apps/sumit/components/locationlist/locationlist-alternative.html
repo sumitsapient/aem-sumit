@@ -1,0 +1,63 @@
+<template data-sly-template.template="${@
+    locationList
+}">
+    <!-- NEARBY LOCATIONS -->
+    <div class="cf featured-city-band city-page">
+        <div class="band">
+            <section
+                    data-sly-test="${locationList.airportLocations }"
+                    class="location-band airport-list">
+                <div>
+                    <sly data-sly-test="${locationList.airportLocations}">
+                        <div class="cf">
+                            <h2>${'locations_0043' @ i18n}</h2>
+                            <ul data-sly-list.child="${locationList.airportLocations}">
+                                <li>
+                                    <a href="${child.url  @ context='unsafe'}">
+                                        ${child.title}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </sly>
+                    <sly data-sly-test="${locationList.exoticsLocations}">
+                        <div class="cf">
+                            <h2>${'locations_0050' @ i18n}</h2>
+                            <ul data-sly-list.child="${locationList.exoticsLocations}">
+                                <li>
+                                    <a href="${child.url  @ context='unsafe'}">
+                                        ${child.title}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </sly>
+                </div>
+            </section>
+
+            <section
+                    data-sly-test="${locationList.nonAirportLocations.size > 0}"
+                    class="location-band region-list neighborhood-list">
+                <div>
+                    <div class="expandable-list">
+                        <h2>${'resflowlocations_0066' @ i18n}</h2>
+                        <ul data-sly-list.child="${locationList.nonAirportLocations}">
+                            <li>
+                                <a href="${child.url  @ context='unsafe'}">
+                                    ${child.title}
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sub-accordion">
+                            <button class="btn btn-unstyled btn--outline show_more">
+                              <span aria-hidden="true" role="presentation">
+                                <i class="icon icon-nav-carrot-down"></i> </span>
+                              ${'resflowcorporatespecialaccountmessage_0002' @ i18n}
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</template>

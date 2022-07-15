@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="ff55ac23-8832-43d7-b81c-fee72e934fce">
+    <jcr:content
+        cq:name="second-event"
+        cq:parentPath="/content/dam/sumit/tyson-events"
+        jcr:description="This is second Tyson Event"
+        jcr:lastModified="{Date}2022-03-24T10:06:43.176+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Second Event"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-03-24T10:06:43.177+05:30">
+        <data
+            cq:model="/conf/sumit/settings/dam/cfm/models/tyson-events"
+            jcr:primaryType="nt:unstructured">
+            <master
+                cq:tags="[we-retail:activity/hiking]"
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                eventTtitle="Hiking Tyson Event"
+                eventTtitle_x0040_LastModified="{Date}2022-03-24T10:06:43.108+05:30"
+                eventType="[we-retail:activity/hiking]"
+                eventType_x0040_LastModified="{Date}2022-03-24T10:06:43.109+05:30"
+                startDate="{Date}2022-03-25T09:58:00.000+05:30"
+                startDate_x0040_LastModified="{Date}2022-03-24T10:06:43.110+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

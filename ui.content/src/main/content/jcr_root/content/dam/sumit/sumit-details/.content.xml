@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="73a11da4-c754-4a9d-aa62-ce6da6cf0701">
+    <jcr:content
+        cq:name="sumit-details"
+        cq:parentPath="/content/dam/sumit"
+        jcr:description=""
+        jcr:lastModified="{Date}2022-05-12T21:35:51.866+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Sumit Details"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-05-12T21:35:51.867+05:30">
+        <data
+            cq:model="/conf/sumit/settings/dam/cfm/models/aem-testing-new-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                dob="{Date}2022-05-12T21:28:00.000+05:30"
+                dob_x0040_LastModified="{Date}2022-05-12T21:28:21.501+05:30"
+                firstname="Sumit"
+                firstname_x0040_LastModified="{Date}2022-05-12T21:28:21.499+05:30"
+                lastname="Yadav"
+                lastname_x0040_LastModified="{Date}2022-05-12T21:28:21.500+05:30"/>
+            <sumit_latest_details
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                dob="{Date}2022-04-12T21:28:00.000+05:30"
+                dob_x0040_LastModified="{Date}2022-05-12T21:35:51.832+05:30"
+                firstname="Sumit"
+                firstname_x0040_LastModified="{Date}2022-05-12T21:35:51.828+05:30"
+                lastname="SomeLast"
+                lastname_x0040_LastModified="{Date}2022-05-12T21:35:51.830+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <sumit_latest_details
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Sumit Latest Details"
+                    name="sumit_latest_details">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[firstname:46d526b7-e3d9-4288-9406-2ba7af6c1870,lastname:46d526b7-e3d9-4288-9406-2ba7af6c1870,dob:46d526b7-e3d9-4288-9406-2ba7af6c1870]"/>
+                </sumit_latest_details>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,85 @@
+.title {
+
+    .cmp-title {
+        margin-bottom: 20px;
+    }
+
+    .cmp-title__text{
+        margin-bottom: 0;
+        font-weight: 500;
+        &--subtitle {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    &--main {
+        .cmp-title__text {
+            background-color: #575755;
+            padding: .875rem .5rem .5rem;
+            margin-bottom: 0;
+            text-align: center;
+            font-weight: 600;
+            @media (min-width: 768px){
+                padding: 1.4375rem 2rem;
+                text-align: left;
+            }
+        }
+    }
+    &--section, &--section-dark,&--padding-bottom-short,&--padding-top-short,&--hide-section-line {
+        .cmp-title__text {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            font-weight: 600;
+            &:before, &:after {
+                content: "";
+                border-top: 1px solid #b8ea3a;
+                flex: 1 0 20px;
+            }
+            &:before {
+                margin-right: 1rem;
+                @media (min-width: 768px){
+                    margin-right: 1.5rem;
+                }
+                @media (min-width: 992px){
+                    margin-right: 2rem;
+                }
+            }
+            &:after {
+                margin-left: 1rem;
+                @media (min-width: 768px){
+                    margin-left: 1.5rem;
+                }
+                @media (min-width: 992px){
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+    &--section-dark {
+        .cmp-title__text {
+            &:before, &:after {
+                border-top: 1px solid #9b9b19;
+            }
+        }
+    }
+    &--padding-bottom-short {
+        .cmp-title__text {
+            margin-bottom: 1rem;
+        }
+    }
+    &--padding-top-short {
+         .cmp-title__text {
+            margin-bottom: 2rem;
+        }
+    }
+    &--hide-section-line {
+         .cmp-title__text {
+             &:before, &:after {
+             border-top:0;
+             }
+         }
+    }
+}

@@ -1,0 +1,14 @@
+<div class="col-md-6">
+   <div class="cmp-grid-cards__card">
+      <div class="cmp-grid-cards__card-image">
+         <img loading="lazy" data-src="${properties.heroImage}" alt="${properties.heroImageAltText||properties.heroTitle}"/>
+      </div>
+   <div class="cmp-grid-cards__cmp-actions d-flex">
+      <div class="cmp-gcard-title">${properties.heroTitle}</div>
+         <a href="${properties.heroUrl}" class="card-cta d-flex align-items-center" target="${properties.heroTarget=='newTab' ? '_blank' : '_self'}">
+         <span class="gridCards-hero-cta">${properties.heroCTA}</span>
+         <span><i class="cta-secondary arrow__right"></i></span>
+         </a>
+      </div>
+   </div>
+</div>

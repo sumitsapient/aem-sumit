@@ -1,0 +1,10 @@
+
+<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.hasContent="${properties.text}"
+    class="cmp-icon">
+   <div class="cmp-icon__top"> <img src ="/content/dam/sumit/${properties.icon}.svg" alt="${properties.icon}"/> </div>
+     <p class="cmp-icon__content">${properties.text}</p>
+   <div class="cmp-icon__bottom"> <img  src ="/content/dam/sumit/${properties.icon}.svg" alt="${properties.icon}"/> </div>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
+

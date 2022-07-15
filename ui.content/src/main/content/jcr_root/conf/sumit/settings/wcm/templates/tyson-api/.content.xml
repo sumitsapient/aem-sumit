@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-24T10:25:49.588+05:30"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/sumit/settings/wcm/template-types/page"
+        jcr:description="Template to load Tyson Events from Content Fragment List."
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Tyson API"
+        status="enabled"/>
+</jcr:root>
