@@ -1,0 +1,30 @@
+<div class="cmp-producttile"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.skuORupc="${properties.skuORupc}">
+    <p class="cmp-producttile_sku"
+    data-sku-or-upc="${properties.skuORupc}"></p>
+    
+    <div class="cmp-producttile__container">
+        <img class="cmp-producttile__image" src="${productData.productDetails.images[0]}"/>
+        <span class="cmp-producttile__name">${productData.productDetails.description}</span>
+        <span class="cmp-producttile__price">${productData.productDetails.finalPrice}</span>
+        <p class="product__stock-alert"></p>
+        <div class="cmp-producttile-button__container">
+           <button type="button" class="button button--yellow cmp-producttile-button"
+            data-track-click="${properties.trackClick}"
+            data-track-name="${properties.trackName}"
+            data-track-type="${properties.trackType}"
+            data-track-item="${properties.trackItemName}|${properties.trackItemRegion}|${properties.trackItemSKU}|${properties.trackItemWeek}">
+            ${properties.cartLabel}
+           </button>
+        </div>
+        <div class="product__incrementor hidden">
+         <span class="dg-icon dg-icon-trash"></span>
+         <img class="dg-icon minus-icon hidden"
+            src="/etc.clientlibs/dollargeneral/clientlibs/clientlib-site/resources/images/minus_icon.svg" />
+         <span class="product__quantity"></span>
+         <span class="dg-icon dg-icon-add" data-toggle="modal"></span>
+     </div>
+     </div>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=!skuORupc, classAppend='cmp-dgproducttile'}"></sly>

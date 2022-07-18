@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Analytics"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <trackclick
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        checked="false"
+                        fieldDescription="Enable analytics click tracking."
+                        name="./trackClick"
+                        text="Enable analytics click tracking"
+                        uncheckedValue="false"
+                        value="true"/>
+                    <trackName
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Name of the item being tracked, i.e. modal exit button"
+                        fieldLabel="Analytics Tracking Name"
+                        name="./trackName"
+                        required="{Boolean}false"/>
+                    <tracktype
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="The type of event being tracked, i.e. button click"
+                        fieldLabel="Analytics Tracking Type"
+                        name="./trackType"/>
+                    <trackitemname
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="This field is used for item name tracking"
+                        fieldLabel="Item Name Attribute"
+                        name="./trackItemName"/>
+                    <trackitemregion
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="This field is used for item region tracking"
+                        fieldLabel="Region Name Attribute"
+                        name="./trackItemRegion"/>
+                    <trackitemSKU
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="This field is used for item SKU tracking"
+                        fieldLabel="SKU Item Tracking"
+                        name="./trackItemSKU"/>
+                    <trackitemweek
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="This field is used for item week tracking"
+                        fieldLabel="Week Item Tracking"
+                        name="./trackItemWeek"/>
+                    <trackdigitalChannel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Digital Channel Tracking"
+                        name="./digitalChannel">
+                        <items jcr:primaryType="nt:unstructured">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value="none"/>
+                            <dgCom
+                                jcr:primaryType="nt:unstructured"
+                                text="DG.com"
+                                value="dgcom"/>
+                            <dgPickup
+                                jcr:primaryType="nt:unstructured"
+                                text="DG Pickup"
+                                value="dgPickup"/>
+                            <app
+                                jcr:primaryType="nt:unstructured"
+                                text="App"
+                                value="app"/>
+                            <popShelf
+                                jcr:primaryType="nt:unstructured"
+                                text="Popshelf"
+                                value="popShelf"/>
+                        </items>
+                    </trackdigitalChannel>
+                    <trackPageTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Page Title Tracking"
+                        name="./trackPageTitle"/>
+                    <trackPageType
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Page Type Tracking"
+                        name="./pageType">
+                        <items jcr:primaryType="nt:unstructured">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value="none"/>
+                            <home
+                                jcr:primaryType="nt:unstructured"
+                                text="Home"
+                                value="home"/>
+                            <category
+                                jcr:primaryType="nt:unstructured"
+                                text="Category"
+                                value="category"/>
+                            <product
+                                jcr:primaryType="nt:unstructured"
+                                text="Product"
+                                value="product"/>
+                            <search
+                                jcr:primaryType="nt:unstructured"
+                                text="Search"
+                                value="search"/>
+                            <cart
+                                jcr:primaryType="nt:unstructured"
+                                text="Cart"
+                                value="cart"/>
+                            <checkout
+                                jcr:primaryType="nt:unstructured"
+                                text="Checkout"
+                                value="checkout"/>
+                            <article
+                                jcr:primaryType="nt:unstructured"
+                                text="Article"
+                                value="article"/>
+                        </items>
+                    </trackPageType>
+                    <trackPageSection
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Page Section Tracking"
+                        name="./pageSection">
+                        <items jcr:primaryType="nt:unstructured">
+                            <none
+                                jcr:primaryType="nt:unstructured"
+                                text="None"
+                                value="none"/>
+                            <top
+                                jcr:primaryType="nt:unstructured"
+                                text="Top"
+                                value="top"/>
+                            <middle
+                                jcr:primaryType="nt:unstructured"
+                                text="Middle"
+                                value="middle"/>
+                            <bottom
+                                jcr:primaryType="nt:unstructured"
+                                text="Bottom"
+                                value="bottom"/>
+                        </items>
+                    </trackPageSection>
+                    <trackSectionTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Section Title Tracking"
+                        name="./sectionTitle"/>
+                    <trackCampaign
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Campaign Tracking"
+                        name="./campaignName"/>
+                    <trackContentWeek
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                        fieldLabel="Content Week Tracking"
+                        max="{Long}52"
+                        min="{Long}1"
+                        name="./contentWeek"/>
+                    <trackCouponExpiration
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                        displayedFormat="YYYY-MM-DD HH:mm"
+                        fieldLabel="Coupon Expiration Tracking"
+                        minDate="today"
+                        name="./couponExpiration"
+                        type="datetime"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
