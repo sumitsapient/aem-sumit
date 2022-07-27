@@ -125,3 +125,4 @@ The project comes with the auto-public repository configured. To setup the repos
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
 1. create an OSGi bundle which has OSGi service which reads JSON data using HTTP GET request from the URL
+
