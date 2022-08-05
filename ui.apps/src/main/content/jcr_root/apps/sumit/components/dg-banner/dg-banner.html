@@ -1,0 +1,39 @@
+<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${properties.bannerVariation}"
+    class="cmp-dg-hero">
+  <sly data-sly-test="${properties.bannerVariation=='none'}"> No Banner Variation Selected!!</sly>
+  <sly data-sly-test="${properties.bannerVariation=='imageText'}">
+    <sly data-sly-include="image-text.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='image'}">
+    <sly data-sly-include="image.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='imageTile4'}">
+    <sly data-sly-include="imageTile.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='heroImageChild2'}">
+    <sly data-sly-include="imageChild.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='bottomTile6'}">
+    <sly data-sly-include="bottomTileSix.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='bottomTile4'}">
+    <sly data-sly-include="bottomTileFour.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='bottomTileTwoImage'}">
+    <sly data-sly-include="bottomTileTwoImage.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='tileOnly'}">
+    <sly data-sly-include="tileOnly.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='twoImage'}">
+    <sly data-sly-include="twoImage.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='fourImage'}">
+    <sly data-sly-include="fourImage.html"/>
+  </sly>
+  <sly data-sly-test="${properties.bannerVariation=='mobile'}">
+    <sly data-sly-include="mobile.html"/>
+  </sly>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
