@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tile Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title"
+                        name="./tileTitle"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldLabel="Summary"
+                        name="./tileSummary"/>
+                    <icon
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Icon Type"
+                        name="./icon">
+                        <items jcr:primaryType="nt:unstructured">
+                            <exploring
+                                jcr:primaryType="nt:unstructured"
+                                text="Exploring"
+                                value="Exploring"/>
+                            <learning
+                                jcr:primaryType="nt:unstructured"
+                                text="Learning"
+                                value="Learning"/>
+                            <job
+                                jcr:primaryType="nt:unstructured"
+                                text="Job"
+                                value="Jobs"/>
+                            <tech
+                                jcr:primaryType="nt:unstructured"
+                                text="Tech"
+                                value="Tech"/>
+                        </items>
+                    </icon>
+                    <linktext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Link Text"
+                        name="./linkText"/>
+                    <linkto
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Link To"
+                        name="./linkTo"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

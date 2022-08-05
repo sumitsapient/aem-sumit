@@ -63,7 +63,7 @@ public class AemGeekImpl implements AemGeek {
         LOG.info("Model Initiated Successfully");
         LOG.warn("Model Initiated Successfully");
         LOG.error("Model Initiated Successfully");
-        String name = firstName;
+        String name = professor?"sumit":"yadav";
     }
 
     @Override

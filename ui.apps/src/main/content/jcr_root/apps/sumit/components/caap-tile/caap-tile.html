@@ -1,0 +1,14 @@
+
+
+
+<div 
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${properties.tileTitle}"
+    class="cmp-byline">
+<div>${properties.tileTitle}</div>
+<div>${properties.tileSummary}</div>
+<div>${properties.icon}</div>
+<div>${properties.linkText}</div>
+<div>${properties.linkTo}</div>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
