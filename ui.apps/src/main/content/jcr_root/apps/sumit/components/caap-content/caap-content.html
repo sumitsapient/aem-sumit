@@ -1,140 +1,15 @@
-
-<!--<link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>-->
-
-<!--<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>-->
-
-<!-- <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>-->
-
-<!-- <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='caap.carousel'}"/>
+</sly>
 
 <sly
-  data-sly-use.caap="com.aem.sumit.core.models.CaapContent"
-  data-sly-use.template="core/wcm/components/commons/v1/templates.html"
-  data-sly-test.name="${caap.carouselTag}">
-    <main>
-        <div class="main-container">
-            <div class="container">
-                <div class="wrapper">
-                    <section class="pt-5 pb-5">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <h1 class="page-heading">${caap.carouselTag}</h1>
-                                    <h2 class="sub-heading">${caap.title}</h2>
-                                    <p class="sub-text">
-                                        ${caap.summary}
-                                    </p>
-                                </div>
-                                <div class="col-md-5">
-                                    <img src="${caap.fileReference}" class="responsive-img" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <h2 class="resource-header">${caap.heading} </h2>
-                                </div>
-
-                                <div class="col-12">
-                                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <div class="row">
-
-                                                    <sly  data-sly-repeat.grid="${caap.carouselActive}">
-                                                        <div class="col-md-4 col-sm-12 mb-3">
-                                                            <div class="card-container">
-                                                                <div class="card-body">
-                                                                    <div class="row">
-                                                                        <div class="card-icon-container col-md-2">
-                                                                            <img src="${grid.icon}" />
-                                                                        </div>
-                                                                        <div class="resource-component-heading col-md-10">
-
-                                                                            <div
-                                                                                    class="resources-component_resource-component-heading__text__3USKT body-medium">
-                                                                                <a href="${grid.linkTo}"
-                                                                                   class="card-title-text"
-                                                                                   tabindex="0">${grid.tileTitle}
-                                                                                </a>
-                                                                                <p class="card-sub-text">${grid.tileSummary}
-                                                                                </p>
-                                                                                <a href="${grid.linkTo}"
-                                                                                   aria-label="read more about What Do I Do With Broken Links?"
-                                                                                   class="resources-component_continue-link"
-                                                                                   tabindex="0">${grid.linkText}</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </sly>
-
-
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="row">
-
-                                                    <sly  data-sly-repeat.grid="${caap.carouselInactive}">
-                                                        <div class="col-md-4 col-sm-12 mb-3">
-                                                            <div class="card-container">
-                                                                <div class="card-body">
-                                                                    <div class="row">
-                                                                        <div class="card-icon-container col-md-2">
-                                                                            <img src="${grid.icon}" />
-                                                                        </div>
-                                                                        <div class="resource-component-heading col-md-10">
-
-                                                                            <div
-                                                                                    class="resources-component_resource-component-heading__text__3USKT body-medium">
-                                                                                <a href="${grid.linkTo}"
-                                                                                   class="card-title-text"
-                                                                                   tabindex="0">${grid.tileTitle}
-                                                                                </a>
-                                                                                <p class="card-sub-text">${grid.tileSummary}
-                                                                                </p>
-                                                                                <a href="${grid.linkTo}"
-                                                                                   aria-label="read more about What Do I Do With Broken Links?"
-                                                                                   class="resources-component_continue-link"
-                                                                                   tabindex="0">${grid.linkText}</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </sly>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-right p-4">
-                                        <a class="pagination-button left-btn" href="#carouselExampleIndicators2" role="button"
-                                           data-slide="prev">
-                                            <span>
-                                                < </span>
-                                        </a>
-                                        <a class="pagination-button" href="#carouselExampleIndicators2" role="button"
-                                           data-slide="next">
-                                            <span>></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-        </div>
-
-
-    </main>
+        data-sly-use.caap="com.aem.sumit.core.models.CaapContent"
+        data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+        data-sly-test.name="${caap.carouselTag}">
+    <sly data-sly-use.desktopTemplate = "carousel-desktop.html">
+        <sly data-sly-call="${desktopTemplate.caapDesktop @ caapObj=caap}"/>
+    </sly>
 </sly>
 <sly data-sly-call="${template.placeholder @ isEmpty=!name, classAppend='cmp-aemgeek'}"></sly>
 

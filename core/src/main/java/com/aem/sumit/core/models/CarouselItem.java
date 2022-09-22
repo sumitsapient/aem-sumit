@@ -16,18 +16,15 @@ import java.util.List;
 public class CarouselItem {
 
     @Inject
-    String icon;
+    String id;
 
     @Inject
-    String linkText;
+    String articleURL;
 
     @Inject
-    String linkTo;
+    String articleDesc;
 
     @Inject
-    String tileSummary;
-
-    @Inject
-    String tileTitle;
+    String articleTitle;
 
 }

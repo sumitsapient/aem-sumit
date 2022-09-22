@@ -1,0 +1,153 @@
+
+.caap-carousel-new {
+
+  .slider {
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    margin:20px auto 0 auto;
+    @media (max-width: 480px){
+      display: none;
+   }
+  }
+  
+  .slider ul {
+    position:relative;
+    width:100%;
+    margin:0;
+    padding:0;
+    height:200px;
+    display:inline-block;
+    list-style:none;
+    background:#458;
+  }
+  
+  
+  .slider ul li {
+    position:relative;
+    float:left;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    width:900px;
+    height:300px;
+    background:#fff;
+    text-align:center;
+    line-height:300px;
+    color:#333;
+  }
+  
+  .control { 
+    
+    top: 40%;
+    z-index: 999;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  .row {
+    .flex-items {
+      background: aqua;
+      width: 27%;
+      border: 1px solid yellow;
+    }
+  }
+
+  .slidermobile {
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    margin:20px auto 0 auto;
+    @media (min-width: 768px){
+      display: none;
+   }
+  }
+  
+  .slidermobile ul {
+    position:relative;
+    width:100%;
+    margin:0;
+    padding:0;
+    height:200px;
+    display:inline-block;
+    list-style:none;
+    background:#458;
+  }
+  
+  
+  .slidermobile ul li {
+    position:relative;
+    float:left;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    width:900px;
+    height:300px;
+    background:#fff;
+    text-align:center;
+    line-height:300px;
+    color:#333;
+  }
+  
+  
+  .controlmobile {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+ 
+}

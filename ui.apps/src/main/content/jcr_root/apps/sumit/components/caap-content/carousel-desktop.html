@@ -1,0 +1,178 @@
+<sly data-sly-template.caapDesktop="${@ caapObj}">
+<main>
+    <div class="main-container">
+
+        <div class="wrapper">
+            <section class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-12">
+                            <h1 class="page-heading">${caapObj.carouselTag}</h1>
+                            <h2 class="sub-heading">${caapObj.title}</h2>
+                            <p class="sub-text">
+                                ${caapObj.summary}
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <img src="${caapObj.fileReference}" class="responsive-img" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="resource-header">${caapObj.heading} </h2>
+                        </div>
+                        <div class="col-md-12 fullview">
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-interval="false" data-ride="carousel" data-wrap="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <sly  data-sly-repeat.grid="${caapObj.carouselActive}">
+                                                <sly data-sly-test="${gridList.first}">
+                                                    <div class="col-md-4 col-sm-12  pl-0 pr-0">
+                                                        <div class="card-container">
+                                                            <div class="card-body">
+                                                                <div class="card-content">
+                                                                    <div class="card-icon-container col-md-2">
+                                                                        <img src="/etc.clientlibs/caap-learner/clientlibs/clientlib-site/resources/blue-icons/${grid.icon}.svg" />
+                                                                    </div>
+                                                                    <div class="resource-component-heading col-md-10">
+                                                                        <div class="resources-component_resource-component-heading__text__3USKT body-medium">
+                                                                            <a href="${grid.linkTo}"
+                                                                               class="card-title-text"
+                                                                               tabindex="0">${grid.tileTitle}
+                                                                            </a>
+                                                                            <p class="card-sub-text">${grid.tileSummary}
+                                                                            </p>
+                                                                            <a href="${grid.linkTo}"
+                                                                               aria-label="read more about What Do I Do With Broken Links?"
+                                                                               class="resources-component_continue-link"
+                                                                               tabindex="0">${grid.linkText}</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </sly>
+                                                <sly data-sly-test="${!gridList.first}">
+                                                    <div class="col-md-4 col-sm-12  pl-0 pr-0">
+                                                        <div class="card-container">
+                                                            <div class="card-body">
+                                                                <div class="card-content">
+                                                                    <div class="card-icon-container col-md-2">
+                                                                        <img src="/etc.clientlibs/caap-learner/clientlibs/clientlib-site/resources/blue-icons/${grid.icon}.svg" />
+                                                                    </div>
+                                                                    <div class="resource-component-heading col-md-10">
+                                                                        <div
+                                                                                class="resources-component_resource-component-heading__text__3USKT body-medium">
+                                                                            <a href="${grid.linkTo}"
+                                                                               class="card-title-text"
+                                                                               tabindex="0">${grid.tileTitle}
+                                                                            </a>
+                                                                            <p class="card-sub-text">${grid.tileSummary}
+                                                                            </p>
+                                                                            <a href="${grid.linkTo}"
+                                                                               aria-label="read more about What Do I Do With Broken Links?"
+                                                                               class="resources-component_continue-link"
+                                                                               tabindex="0">${grid.linkText}</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </sly>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <sly  data-sly-repeat.grid="${caapObj.carouselInactive}">
+                                                <sly data-sly-test="${gridList.first}">
+                                                    <div class="col-md-4 col-sm-12 pl-0 pr-0">
+                                                        <div class="card-container">
+                                                            <div class="card-body">
+                                                                <div class="card-content">
+                                                                    <div class="card-icon-container col-md-2">
+                                                                        <img src="/etc.clientlibs/caap-learner/clientlibs/clientlib-site/resources/blue-icons/${grid.icon}.svg" />
+                                                                    </div>
+                                                                    <div class="resource-component-heading  col-md-10">
+                                                                        <div
+                                                                                class="resources-component_resource-component-heading__text__3USKT body-medium">
+                                                                            <a href="${grid.linkTo}"
+                                                                               class="card-title-text"
+                                                                               tabindex="0">${grid.tileTitle}
+                                                                            </a>
+                                                                            <p class="card-sub-text">${grid.tileSummary}
+                                                                            </p>
+                                                                            <a href="${grid.linkTo}"
+                                                                               aria-label="read more about What Do I Do With Broken Links?"
+                                                                               class="resources-component_continue-link"
+                                                                               tabindex="0">${grid.linkText}</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </sly>
+                                                <sly data-sly-test="${!gridList.first}">
+                                                    <div class="col-md-4 col-sm-12  pl-0 pr-0">
+                                                        <div class="card-container">
+                                                            <div class="card-body">
+                                                                <div class="card-content">
+                                                                    <div class="card-icon-container col-md-2">
+                                                                        <img src="/etc.clientlibs/caap-learner/clientlibs/clientlib-site/resources/blue-icons/${grid.icon}.svg" />
+                                                                    </div>
+                                                                    <div class="resource-component-heading col-md-10">
+                                                                        <div
+                                                                                class="resources-component_resource-component-heading__text__3USKT body-medium">
+                                                                            <a href="${grid.linkTo}"
+                                                                               class="card-title-text"
+                                                                               tabindex="0">${grid.tileTitle}
+                                                                            </a>
+                                                                            <p class="card-sub-text">${grid.tileSummary}
+                                                                            </p>
+                                                                            <a href="${grid.linkTo}"
+                                                                               aria-label="read more about What Do I Do With Broken Links?"
+                                                                               class="resources-component_continue-link"
+                                                                               tabindex="0">${grid.linkText}</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </sly>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-right p-4">
+                                <a class="pagination-button left-btn" href="#carouselExampleIndicators2" role="button"
+                                   data-slide="prev" id="nextbtn">
+                                         <span>
+                           <img src="/etc.clientlibs/caap-learner/clientlibs/clientlib-site/resources/logo/previous-blue-icon.svg" id="prevbtnimg" />
+
+                                         </span>
+                                </a>
+                                <a class="pagination-button" href="#carouselExampleIndicators2" role="button"
+                                   data-slide="next" id="prevbtn">
+                                         <span>
+                           <img src="/etc.clientlibs/caap-learner/clientlibs/clientlib-site/resources/logo/next-blue-icon.svg" id="nextbtnimg" />
+
+                                         </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <sly data-sly-use.mobileTemplate = "carousel-mobile.html">
+                        <sly data-sly-call="${mobileTemplate.caapMobile @ caap=caapObj}"/>
+                    </sly>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+</sly>

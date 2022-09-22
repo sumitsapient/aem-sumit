@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
     jcr:title="Dialog Props"
     sling:resourceType="cq/gui/components/authoring/dialog"
-    extraClientlibs="[sumit.components.aemgeek.editor]"
+    extraClientlibs="caap.components.icon.editor"
     mode="edit">
     <content
         jcr:primaryType="nt:unstructured"
@@ -71,10 +71,12 @@
                                         fieldLabel="Book Details">
                                         <items jcr:primaryType="nt:unstructured">
                                             <carousel
+                                                granite:class="caap-multifield"
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                                 composite="{Boolean}true"
-                                                fieldLabel="Carousel Items">
+                                                fieldLabel="Carousel Items"
+                                                validation="carousel-multifield">
                                                 <field
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/container"
@@ -99,19 +101,19 @@
                                                                 <exploring
                                                                     jcr:primaryType="nt:unstructured"
                                                                     text="Exploring"
-                                                                    value="Exploring"/>
+                                                                    value="career-blue-icon"/>
                                                                 <learning
                                                                     jcr:primaryType="nt:unstructured"
                                                                     text="Learning"
-                                                                    value="Learning"/>
+                                                                    value="learning-blue-icon"/>
                                                                 <job
                                                                     jcr:primaryType="nt:unstructured"
                                                                     text="Job"
-                                                                    value="Jobs"/>
+                                                                    value="jobs-blue-icon"/>
                                                                 <tech
                                                                     jcr:primaryType="nt:unstructured"
                                                                     text="Tech"
-                                                                    value="Tech"/>
+                                                                    value="support-blue-icon"/>
                                                             </items>
                                                         </icon>
                                                         <linktext
@@ -126,6 +128,9 @@
                                                             name="./linkTo"/>
                                                     </items>
                                                 </field>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    min-items="4"/>
                                             </carousel>
                                         </items>
                                     </well>
