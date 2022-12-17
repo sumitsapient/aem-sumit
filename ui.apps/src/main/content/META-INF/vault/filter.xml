@@ -3,4 +3,6 @@
     <filter root="/apps/sumit/clientlibs"/>
     <filter root="/apps/sumit/components"/>
     <filter root="/apps/sumit/i18n"/>
+    <filter root="/apps/sling/servlet"/>
+    <filter root="/apps/wcm/foundation"/>
 </workspaceFilter>
