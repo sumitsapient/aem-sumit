@@ -811,6 +811,38 @@ Refer workflow-stage.png for pictorial view.
 
 18.9 Refer Worflow Model - Geek Publish Workflow -> approve/reject the page activation.	  
 
+--------------------------------------------Dispatcher Setup----------------------------------------------
+1. Download httpd-2.2.2-win32-x86-no_ssl (apache web server) and dispatcher module dispatcher-apache2.2-windows-x86
+
+2. Double click ssl file and install and change the directory to C:\apache2\
+
+3. Copy disp_apache2.2.dll to C:\apache2\modules.
+
+4. In apache 2.2, starting point is httpd.conf located at C:\apache2\conf.
+
+5. Open httpd.conf and add the module we added:
+   LoadModule dispatcher_module modules/disp_apache2.2.dll
+
+6. Copy IF block from httpd.conf.disp2 and paste in httpd.conf  . httpd.conf.disp2 file is located in dispathcer-apache2.2
+   <IfModule disp_apache2.c> ....</IfModule disp_apache2.c>
+
+7. The IF module tells about the configuration files of dispatcher.
+
+8. Again copy the <Directory /> block to httpd.conf
+
+9.The <Directory /> block has "SetHandler dispatcher-handler" which tells that all processing will be done by
+our module that we loaded i.e disp_apache2.2.dll
+
+10. Copy dipatcher.any to C:\apache2\conf
+    Note: In httpd.conf, ensure that "ServerRoot "C:/apache2" always points to apache installation directory.
+
+11. Restart the apache server. If everything is fine server will restart and log with name "dispatcher.log" will be
+    generated at C:\apache2\logs
+
+12. Change the cache root path in dispatcher.any under /cache farm.
+    /docroot "C:/apache2/htdocs"
+
+
 ## AEM Scratch
 -------------------------------------------AEM FROM SCRATCH_______________
 
