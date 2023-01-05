@@ -755,6 +755,19 @@ Bundle-DocURL:
                 <version>1.0.1</version>
                 <scope>test</scope>
             </dependency>
+
+            <!-- Apache Solr -->
+            <dependency>
+                <groupId>org.apache.servicemix.bundles</groupId>
+                <artifactId>org.apache.servicemix.bundles.zookeeper</artifactId>
+                <version>3.8.0_1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.servicemix.bundles</groupId>
+                <artifactId>org.apache.servicemix.bundles.solr-solrj</artifactId>
+                <version>8.11.0_1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

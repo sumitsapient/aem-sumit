@@ -843,6 +843,52 @@ our module that we loaded i.e disp_apache2.2.dll
     /docroot "C:/apache2/htdocs"
 
 
+##AEM + SOLR Integration
+a)...Below are the use cases for different scenarios.
+ 1. Servlet - Index,Delete and Search Page Data to Solr.
+ 2. Scheduler - Index AEM Page to Solr at scheduled interval for different sites.
+ 3. ReplicationEventListener - Index AEM Page on publish and Un-Publish.
+
+ Classes Included are:
+ 1. SolrSearchServlet - Servlet.
+ 2. SolrSearchHelper
+ 3. PageService - Service to get Page Data for Index.
+ 4. SolrServiceAPI - Make Rest Call to Solr Server.
+ 5. SolrOSGIConfig - Factory OSGI Config.
+ 6. SolrOSGIConfigService - Service to get OSGI Configuration.
+ 7. SolrServiceManager - Get OSGI Config for specific site.
+ 8. SolrOSGISchedulerConfig - OSGI config for Scheduler
+ 9. SolrOSGISchedulerConfigService - Get OSGI Configuration for Scheduler.
+ 10. SolrCAConfig - Context Aware Configuration.
+
+ HighLevel Flow:
+ 1. Servlet/Scheduler/EventListener -> will create object of SolrSearchHelper.
+ 2. SolrSearchHelper -> Gets the current siteID based on the context(CA) using SolrCAConfig.
+ 3. Using the siteID, SolrSearchHelper gets the corresponding solrEndpoint using SolrServiceManager.
+ 4. SolrSearchHelper makes the REST call to Solr.
+
+ HighLevel Flow For Servlet:
+ 1. SolrSearchServlet -> calls services PageService,SolrServiceManager,SolrServiceAPI
+ 2. SolrSearchServlet -> Create SolrSearchHelper object with passing SolrServiceManager inside constructor.
+
+b) Install Solr - Unzip the file .
+1. Run solr start in /bin
+2. Access http://localhost:8983
+3. Add core:
+   name: techproducts
+   instanceDir: D:\world\software\solr-8.11.2\solr-8.11.2\server\solr\configsets\sample_techproducts_configs
+4. Copy the sample data to this core:
+   Go to D:\world\software\solr-8.11.2\solr-8.11.2\example\exampledocs
+   Run the command -> java -jar -Dc=techproducts post.jar *.xml
+5. Create two cores:
+    a). Create folders weretail and wknd under D:\world\software\solr-8.11.2\solr-8.11.2\server\solr
+    b). Copy data and conf folder folders from D:\world\software\solr-8.11.2\solr-8.11.2\server\solr\configsets\sample_techproducts_configs
+        and paste under weretail and wknd folders.
+    c)  Empty the data folder for both wknd and weretail.
+    d) From solr admin, click add core and enter name and dir as weretail.
+       Repeat same for wknd.
+
+
 ## AEM Scratch
 -------------------------------------------AEM FROM SCRATCH_______________
 

@@ -109,6 +109,18 @@
                             <type>zip</type>
                             <target>/apps/sumit-packages/application/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>org.apache.servicemix.bundles</groupId>
+                            <artifactId>org.apache.servicemix.bundles.zookeeper</artifactId>
+                            <filter>true</filter>
+                            <target>/apps/sumit-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>org.apache.servicemix.bundles</groupId>
+                            <artifactId>org.apache.servicemix.bundles.solr-solrj</artifactId>
+                            <filter>true</filter>
+                            <target>/apps/sumit-packages/application/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -241,6 +253,13 @@
             <type>zip</type>
             <classifier>min</classifier>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.zookeeper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.solr-solrj</artifactId>
+        </dependency>
     </dependencies>
 </project>
