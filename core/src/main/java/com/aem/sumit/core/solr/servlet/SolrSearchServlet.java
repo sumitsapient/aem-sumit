@@ -22,7 +22,8 @@ import java.io.IOException;
 @SlingServletPaths(value = {"/bin/solrsearch"})
 public class SolrSearchServlet extends SlingAllMethodsServlet {
 
-    // http://localhost:4502/bin/solrsearch?searchParameter=index&sitePath=/content/sumit/us/en
+    // http://localhost:4502/bin/solrsearch?searchParameter=index&sitePath=/content/sumit/us/en -> TO INDEX
+    //http://localhost:4502/bin/solrsearch?searchParameter=search&sitePath=/content/sumit/us/en&searchKey=prayagraj -> TO SEARCH
     private static final Logger LOG = LoggerFactory.getLogger(SolrSearchServlet.class);
 
     @Reference

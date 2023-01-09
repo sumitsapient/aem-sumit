@@ -7,4 +7,6 @@ import java.util.List;
 public interface PageService {
 
     public List<PageDetail> getPagesDetail(String sitePath);
+
+    public PageDetail getSinglePageDetail(String pagePath);
 }

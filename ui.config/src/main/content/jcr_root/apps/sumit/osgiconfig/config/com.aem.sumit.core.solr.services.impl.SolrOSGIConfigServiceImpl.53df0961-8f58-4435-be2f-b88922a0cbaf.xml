@@ -4,4 +4,4 @@
     siteId="we-retail"
     solrResponse="[\0]"
     solrServerEndpoint="http://localhost:8983/solr"
-    solrUsername=""/>
+    solrUsername="test"/>

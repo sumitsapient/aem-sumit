@@ -47,6 +47,7 @@ public class SolrSearchHelper {
         this.solrServiceManager = solrServiceManager;
         this.sitePath = sitePath;
         this.solrCAConfig = CAUtils.getContextAwareConfig(sitePath,resourceResolver,SolrCAConfig.class);
+        this.solrOSGIConfigService = solrServiceManager.getServiceConfiguration(solrCAConfig.siteId());
 
     }
 
@@ -66,6 +67,10 @@ public class SolrSearchHelper {
             } else if (StringUtils.containsIgnoreCase(searchOperation,"index")) {
                 //TODO- Delete
                 response.getWriter().write("TO DO FOR DELETE");
+            }else if (StringUtils.containsIgnoreCase(searchOperation,"search")) {
+                String searchKey = request.getParameter("searchKey");
+                String searchText = StringUtils.isNotBlank(searchKey) ? searchKey : null;
+                response.getWriter().write(solrServiceAPI.getSearchResult(searchText,this).toString());
             } else {
                 response.getWriter().write("Choose operation for Solr");
             }

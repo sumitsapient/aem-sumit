@@ -48,4 +48,21 @@ public class PageServiceImpl implements PageService {
         }
         return null;
     }
+
+    @Override
+    public PageDetail getSinglePageDetail(String pagePath) {
+        try{
+            final ResourceResolver resourceResolver = ResourceResolverUtil.newResolver(resourceResolverFactory);
+            Page page = resourceResolver.adaptTo(PageManager.class).getPage(pagePath);
+            String title = StringUtils.isNotBlank(page.getTitle()) ? page.getTitle() : page.getName();
+            String name = page.getName();
+            String description = StringUtils.isNotBlank(page.getDescription()) ? page.getDescription() : page.getDescription();
+            String path = page.getPath();
+            return new PageDetail(title,name,description,path);
+        }
+        catch (Exception e) {
+            LOG.error("\n ERROR GET - {}", e.getMessage());
+        }
+        return null;
+    }
 }
