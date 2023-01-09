@@ -9,4 +9,14 @@
         jcr:primaryType="nt:unstructured"
         clientId="28b07c6be4d544f188dc2f36e33b196b"
         reportSuiteId=""/>
+    <com.aem.sumit.core.services.contextaware.GeeksCAConfig
+        jcr:primaryType="nt:unstructured"
+        siteAdmin="US-ADMIN"
+        siteCountry="USA"
+        siteLocale="EN"
+        siteSection="AEM"/>
+    <com.aem.sumit.core.solr.configs.SolrCAConfig
+        jcr:primaryType="nt:unstructured"
+        coreName="wknd"
+        siteId="sumit-learning"/>    
 </jcr:root>

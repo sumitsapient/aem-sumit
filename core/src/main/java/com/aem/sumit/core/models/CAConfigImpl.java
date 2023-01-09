@@ -25,7 +25,7 @@ import javax.annotation.PostConstruct;
 public class CAConfigImpl implements CAConfig  {
 
     private static final Logger LOG = LoggerFactory.getLogger(CAConfigImpl.class);
-    public static final String RESOURCE_TYPE = "sumit/components/card";
+    public static final String RESOURCE_TYPE = "sumit/components/caware";
 
     @SlingObject
     ResourceResolver resourceResolver;

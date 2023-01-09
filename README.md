@@ -887,7 +887,8 @@ b) Install Solr - Unzip the file .
     c)  Empty the data folder for both wknd and weretail.
     d) From solr admin, click add core and enter name and dir as weretail.
        Repeat same for wknd.
-
+6. Confugure OSGI service and CA,hit the servlet - http://localhost:4502/bin/solrsearch?searchParameter=index&sitePath=/content/sumit/us/en
+7. 
 
 ## AEM Scratch
 -------------------------------------------AEM FROM SCRATCH_______________
