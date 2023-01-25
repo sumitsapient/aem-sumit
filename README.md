@@ -888,7 +888,25 @@ b) Install Solr - Unzip the file .
     d) From solr admin, click add core and enter name and dir as weretail.
        Repeat same for wknd.
 6. Confugure OSGI service and CA,hit the servlet - http://localhost:4502/bin/solrsearch?searchParameter=index&sitePath=/content/sumit/us/en
-7. 
+
+---------------------AEM + Solr-------------------------
+1. Install jenkins war and run the command java -jar Jenkins.war
+2. Default port is 8080. To change the port java -jar Jenkins.war --httpPort-9090
+3. Visit localhost:8080 and enter password(7ff2bbbce2ce41848f5e19c9315a529c). 
+   Then create an admin user . username and password as admin.
+4. Integrate Public GitHub Repo:
+   a. New Item > Enter Project Name > Freestyle Project
+   b. Check Github Project and enter Github URL (eg: https://github.com/sumitsapient/javaeight)
+   c. Select Git in Source Code Management.
+   d. Enter Github Repository URL (https://github.com/sumitsapient/javaeight.git) and select branch (main)
+   e. Select Delete workspace before build starts in Build Environment.
+   f. Select Invoke top-level Maven targets in Build Steps.
+   g. Enter goal as clean install.
+5. Integrate Private Github Repo:
+   a. It can be integrated either by Personal Access Token or SSH Keys.
+   b. Below steps are for Personal Access Token.
+   c. In github create personal access tokens and in Jenkins create credentials in Jenkins.
+6. 
 
 ## AEM Scratch
 -------------------------------------------AEM FROM SCRATCH_______________
