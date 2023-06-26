@@ -5,4 +5,5 @@
     <filter root="/apps/sumit/i18n"/>
     <filter root="/apps/sling/servlet"/>
     <filter root="/apps/wcm/foundation"/>
+    <filter root="/apps/settings/dam"/>
 </workspaceFilter>

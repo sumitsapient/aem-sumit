@@ -1,6 +1,8 @@
 (function ($, channel, window, undefined) {
   "use strict";
 
+
+
   var ACTION_ICON = "coral-Icon--gear";
   var ACTION_TITLE = "CHATGPT";
   var ACTION_NAME = "ChatGPT";

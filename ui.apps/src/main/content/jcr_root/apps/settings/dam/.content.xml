@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <indesign/>
+    <cfm jcr:primaryType="nt:unstructured">
+        <models jcr:primaryType="nt:unstructured">
+            <formbuilderconfig jcr:primaryType="nt:unstructured">
+                <datatypes jcr:primaryType="nt:unstructured">
+                    <items jcr:primaryType="nt:unstructured">
+                        <color-picker
+                            jcr:primaryType="nt:unstructured"
+                            fieldIcon="colorPalette"
+                            fieldMetaTypes="[color-picker]"
+                            fieldProperties="[labelfield,maptopropertyfield,placeholderfield,textvaluefield,requiredfield]"
+                            fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                            fieldResourceType="[granite/ui/components/coral/foundation/form/colorfield]"
+                            fieldTitle="Color Picker"
+                            listOrder="9"
+                            renderType="text"
+                            valueType="[string]"/>
+                        <ai-summary
+                            jcr:primaryType="nt:unstructured"
+                            fieldIcon="text"
+                            fieldMetaTypes="[ai-summary]"
+                            fieldProperties="[mvfields,labelfield,maptopropertyfield,placeholderfield,textvaluefield,maxlengthfield,requiredfield,uniquefield,translatablefield,textfieldvalidation,customerrormessage]"
+                            fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                            fieldResourceType="[sumit/components/aisummary]"
+                            fieldTitle="AI Summary"
+                            listOrder="1"
+                            renderAsFieldLabels="[Text Field,Multiple Field]"
+                            renderType="text"
+                            validationTypes="[text/email,text/url,text/custom]"
+                            valueType="[string,string[]]"/>
+                        <ai-keyword
+                            jcr:primaryType="nt:unstructured"
+                            fieldIcon="text"
+                            fieldMetaTypes="[ai-keyword]"
+                            fieldProperties="[mvfields,labelfield,maptopropertyfield,placeholderfield,textvaluefield,maxlengthfield,requiredfield,uniquefield,translatablefield,textfieldvalidation,customerrormessage]"
+                            fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                            fieldResourceType="[sumit/components/aikeyword]"
+                            fieldTitle="AI Keyword"
+                            listOrder="1"
+                            renderAsFieldLabels="[Text Field,Multiple Field]"
+                            renderType="text"
+                            validationTypes="[text/email,text/url,text/custom]"
+                            valueType="[string,string[]]"/>
+                    </items>
+                </datatypes>
+            </formbuilderconfig>
+        </models>
+    </cfm>
+</jcr:root>

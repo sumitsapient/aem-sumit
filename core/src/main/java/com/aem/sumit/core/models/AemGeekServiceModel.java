@@ -7,6 +7,7 @@ import com.aem.sumit.core.services.osgiconfig.OSGIConfig;
 import com.aem.sumit.core.services.osgiconfig.OSGiFactoryConfig;
 import com.day.cq.wcm.api.Page;
 import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.slf4j.Logger;
@@ -16,7 +17,7 @@ import javax.annotation.PostConstruct;
 import java.util.Iterator;
 import java.util.List;
 
-@Model(adaptables = {SlingHttpServletRequest.class})
+@Model(adaptables = {SlingHttpServletRequest.class},defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class AemGeekServiceModel {
 
     private static final Logger LOG = LoggerFactory.getLogger(AemGeekServiceModel.class);
