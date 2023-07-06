@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
     jcr:isCheckedOut="{Boolean}true"
     jcr:mixinTypes="[mix:referenceable,mix:versionable]"
     jcr:primaryType="dam:Asset"
@@ -7,7 +7,7 @@
     <jcr:content
         cq:name="alex-user-details"
         cq:parentPath="/content/dam/sumit"
-        jcr:description=""
+        jcr:description="\0"
         jcr:lastModified="{Date}2022-05-12T21:29:03.234+05:30"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent"

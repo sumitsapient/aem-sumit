@@ -24,6 +24,7 @@ import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Objects;
 import java.util.Optional;
 
 import static com.aem.sumit.core.constants.OpenAIConstants.CONTENT_TYPE_JSON;
@@ -47,60 +48,53 @@ public class OpenAIServlet extends SlingSafeMethodsServlet {
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
         String prompt = request.getParameter(OpenAIConstants.PROMPT);
-        String style = request.getParameter(OpenAIConstants.STYLE);
-        String keyword = request.getParameter(OpenAIConstants.KEYWORD);
+        String type =  request.getParameter(OpenAIConstants.TYPE);
+        String marker =  request.getParameter(OpenAIConstants.MARKER);
+       // String keyword = request.getParameter(OpenAIConstants.KEYWORD);
 
-        Optional.ofNullable(prompt).ifPresent(p -> Optional.ofNullable(style).ifPresent(s -> {
+        Optional.ofNullable(prompt).filter(p -> Objects.nonNull(marker) && Objects.nonNull(type)).ifPresent(p -> {
             StringBuilder stringBuilder = new StringBuilder(p);
+            String message = null;
+            String descPrefix = "";
 
-            switch (s.toLowerCase()) {
-                case OpenAIConstants.SHORT:
-                    stringBuilder.insert(0, OpenAIConstants.AI_SHORT_DESC);
-                    break;
-                case OpenAIConstants.DETAILED:
-                    stringBuilder.insert(0, OpenAIConstants.AI_DETAILED_DESC);
-                    break;
-                default:
-                    // Handle unrecognized style if needed
-                    break;
+            if (type.equalsIgnoreCase(OpenAIConstants.SHORT)) {
+                if (marker.equalsIgnoreCase(OpenAIConstants.WARMTH)) {
+                    descPrefix = OpenAIConstants.AI_SHORT_DESC_WARMTH;
+                } else if (marker.equalsIgnoreCase(OpenAIConstants.AGGRESSIVE)) {
+                    descPrefix = OpenAIConstants.AI_SHORT_DESC_AGGRESSIVE;
+                } else if (marker.equalsIgnoreCase(OpenAIConstants.FORMAL)) {
+                    descPrefix = OpenAIConstants.AI_SHORT_DESC_FORMAL;
+                }
+            } else if (type.equalsIgnoreCase(OpenAIConstants.DETAILED)) {
+                if (marker.equalsIgnoreCase(OpenAIConstants.WARMTH)) {
+                    descPrefix = OpenAIConstants.AI_DETAILED_DESC_WARMTH;
+                } else if (marker.equalsIgnoreCase(OpenAIConstants.AGGRESSIVE)) {
+                    descPrefix = OpenAIConstants.AI_DETAILED_DESC_AGGRESSIVE;
+                } else if (marker.equalsIgnoreCase(OpenAIConstants.FORMAL)) {
+                    descPrefix = OpenAIConstants.AI_DETAILED_DESC_FORMAL;
+                }
             }
 
-            String message = null;
+            stringBuilder.insert(0, descPrefix);
+
             try {
                 message = generateMessage(openAIConfig, stringBuilder.toString());
             } catch (IOException e) {
-                log.error("Error occurred while generating summary", e);
+                log.error("Error occurred while generating message", e);
             }
 
-            if (message != null) {
+            if (Objects.nonNull(message) && !message.isEmpty()) {
                 int lastIndex = message.lastIndexOf(".");
-                String output = message.substring(0, lastIndex + 1);
+                String output = (lastIndex != -1) ? message.substring(0, lastIndex + 1) : message;
                 try {
                     writeResponse(response, output);
                 } catch (IOException e) {
-                    log.error("Error occurred while generating response for summary", e);
+                    log.error("Error occurred while generating response", e);
                 }
             }
-        }));
+        });
 
 
-        Optional.ofNullable(keyword).filter(k -> k.equalsIgnoreCase("true"))
-                .ifPresent(k -> Optional.ofNullable(prompt)
-                        .ifPresent(p -> {
-                            StringBuilder keyPrompt = new StringBuilder(p);
-                            keyPrompt.insert(0, OpenAIConstants.AI_KEYWORDS);
-                            String message = null;
-                            try {
-                                message = generateMessage(openAIConfig, keyPrompt.toString());
-                            } catch (IOException e) {
-                                log.error("Error occurred while generating keyword",e);
-                            }
-                            try {
-                                writeResponse(response, message);
-                            } catch (IOException e) {
-                                log.error("Error occurred while writing response for keyword",e);
-                            }
-                        }));
     }
 
     private void writeResponse(SlingHttpServletResponse response, String message) throws IOException {
@@ -115,7 +109,6 @@ public class OpenAIServlet extends SlingSafeMethodsServlet {
         request.addHeader("Authorization", "Bearer " + openAIConfig.getApiKey());
         request.addHeader("Content-Type", CONTENT_TYPE_JSON);
         request.setEntity(new StringEntity(requestBody));
-
         HttpResponse response = client.execute(request);
         if (response.getStatusLine().getStatusCode() != 200) {
             return "Sorry! ChatGPT server is busy. Please try after some time";

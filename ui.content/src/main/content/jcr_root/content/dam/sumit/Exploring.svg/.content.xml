@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
     jcr:mixinTypes="[mix:referenceable]"
     jcr:primaryType="dam:Asset"
     jcr:uuid="84ff96c1-1794-49ba-a2ca-119c6a50ebfa">
     <jcr:content
         dam:assetState="processed"
-        jcr:lastModified="{Date}2022-07-15T13:12:14.493+05:30"
+        jcr:lastModified="{Date}2023-06-30T18:53:16.180+05:30"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
-            dam:extracted="{Date}2022-07-15T13:12:14.096+05:30"
-            dam:sha1="43b78086bca04d7ed421e0d02a62240042adddd0"
-            dam:size="{Long}895"
+            dam:extracted="{Date}2023-06-30T18:53:07.502+05:30"
+            dam:sha1="90640024f157b1a709cfdc4b453548ff348954c1"
+            dam:size="{Long}898"
             dc:format="image/svg+xml"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"/>

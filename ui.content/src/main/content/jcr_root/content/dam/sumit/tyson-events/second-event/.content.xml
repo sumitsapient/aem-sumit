@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
     jcr:isCheckedOut="{Boolean}true"
     jcr:mixinTypes="[mix:referenceable,mix:versionable]"
     jcr:primaryType="dam:Asset"
@@ -18,7 +18,7 @@
             cq:model="/conf/sumit/settings/dam/cfm/models/tyson-events"
             jcr:primaryType="nt:unstructured">
             <master
-                cq:tags="[we-retail:activity/hiking]"
+                cq:tags="[]"
                 jcr:mixinTypes="[cq:Taggable]"
                 jcr:primaryType="nt:unstructured"
                 eventTtitle="Hiking Tyson Event"

@@ -45,7 +45,7 @@ function showDialog() {
     // Add an event listener to the submit button
     dialog.footer.querySelector("button").addEventListener("click", function () {
       var textarea1Value = dialog.content.querySelector("#textarea1").value;
-      var servletUrl = "/bin/chat?prompt=" + encodeURIComponent(textarea1Value);
+      var servletUrl = `/bin/chat?prompt=${encodeURIComponent(textarea1Value)}&keyword=false`;
 
        dialog.content.querySelector("#textarea2").value = 'Generating...';
 
