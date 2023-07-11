@@ -1,3 +1,18 @@
 .short-warmth,.short-aggressive,.short-formal,.detail-warmth,.detail-aggressive,.detail-formal{
-    display:none;
+     display:none !important;
+}
+.btn {
+        border-width: 1px;
+        font-size: 12px;
+         margin-top:12px;
+}
+.imgContainer {
+text-align:center;
+}
+.btnClose {
+    border-style: none;
+    margin-left: 246px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-bottom: 3px;
 }

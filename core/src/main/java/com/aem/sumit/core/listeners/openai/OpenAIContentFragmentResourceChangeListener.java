@@ -4,6 +4,7 @@ import com.adobe.granite.workflow.WorkflowException;
 import com.adobe.granite.workflow.WorkflowSession;
 import com.adobe.granite.workflow.exec.WorkflowData;
 import com.adobe.granite.workflow.model.WorkflowModel;
+import com.aem.sumit.core.constants.OpenAIConstants;
 import com.aem.sumit.core.utils.ResourceResolverUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.sling.api.resource.LoginException;
@@ -21,10 +22,10 @@ import java.util.Objects;
 //The workflow creates a new content fragment with changed resource.
 @Slf4j
 @Component(service = { ResourceChangeListener.class}, immediate = true, property = {
-        Constants.SERVICE_DESCRIPTION + "=Initiate Approval Workflow for OpenAI CF. ",
-        ResourceChangeListener.CHANGES + "=CHANGED", ResourceChangeListener.CHANGES + "=REMOVED",
-        ResourceChangeListener.CHANGES + "=ADDED"
-       // ResourceChangeListener.PATHS + "=" + OpenAIConstants.DAM_ROOT_SUMIT
+        Constants.SERVICE_DESCRIPTION + "=Listener to initiate workflow for creating CF. ",
+        ResourceChangeListener.CHANGES + "=CHANGED",
+        ResourceChangeListener.CHANGES + "=ADDED",
+        ResourceChangeListener.PATHS + "=" + OpenAIConstants.DAM_ROOT_SUMIT
         })
 public class OpenAIContentFragmentResourceChangeListener implements ResourceChangeListener {
     @Reference

@@ -4,4 +4,5 @@
     <jcr:content jcr:primaryType="nt:unstructured"/>
     <open-ai-cf-model-version2/>
     <open-ai-cf-model-version3/>
+    <open-ai-cf-model-version4/>
 </jcr:root>

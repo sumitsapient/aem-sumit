@@ -5,6 +5,7 @@ import com.adobe.cq.dam.cfm.ContentFragmentException;
 import com.adobe.cq.dam.cfm.FragmentTemplate;
 import com.aem.sumit.core.constants.OpenAIConstants;
 import com.aem.sumit.core.utils.ResourceResolverUtil;
+import com.day.cq.dam.api.AssetManager;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.*;
@@ -21,12 +22,16 @@ import javax.jcr.Session;
 import javax.jcr.observation.Event;
 import javax.jcr.observation.EventIterator;
 import javax.jcr.observation.EventListener;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Slf4j
 @Component(service = EventListener.class, immediate = true)
-public class OpenAIContentFragmentEventListener implements EventListener {
+public class OpenAIContentFragmentEventListenerV2 implements EventListener {
 
     @Reference
     ResourceResolverFactory resourceResolverFactory;
@@ -44,7 +49,7 @@ public class OpenAIContentFragmentEventListener implements EventListener {
         session.getWorkspace().getObservationManager().addEventListener(this,
                       Event.PROPERTY_ADDED |
                         Event.PROPERTY_CHANGED |
-                        Event.NODE_ADDED ,"/content/dam/test", true,null, null, false);
+                        Event.NODE_ADDED ,"/content/dam/sumit/yadav", true,null, null, false);
     }
 
     @Override
@@ -80,10 +85,11 @@ public class OpenAIContentFragmentEventListener implements EventListener {
             Resource masterResource = resourceResolver.resolve(masterPath);
             if(Objects.nonNull(masterResource)) {
                 ValueMap properties = masterResource.adaptTo(ValueMap.class);
+                String aiImageUrl = properties.get("imagePath",String.class);
                 String model = masterResource.getParent().getValueMap().get("cq:model", String.class);
-                if (StringUtils.isNotBlank(model) && model.contains("open-ai-cf-model-version2") && Objects.nonNull(properties.get("prompt",String.class))) {
-                    log.info("Creating Fragment for {} ",properties.get("prompt",String.class));
-                    createNewFragment(properties,resourceResolver,model,updatedCFElement);
+                if (StringUtils.isNotBlank(model) && model.contains("open-ai-cf-model-version4") && Objects.nonNull(properties.get("title",String.class)) ) {
+                    log.info("Creating Fragment for {} ",properties.get("title",String.class));
+                    createNewFragment(properties,resourceResolver,updatedCFElement,aiImageUrl);
                 }
                 else {
                     //do nothing
@@ -91,7 +97,7 @@ public class OpenAIContentFragmentEventListener implements EventListener {
 
             }
 
-        } catch (ContentFragmentException | PersistenceException e) {
+        } catch (Exception e) {
             log.error("Error occured while extracting content fragment elements {}",e);
         }
     }
@@ -103,9 +109,10 @@ public class OpenAIContentFragmentEventListener implements EventListener {
          return masterPath;
     }
 
-    private void createNewFragment(ValueMap properties, ResourceResolver resourceResolver, String model, List<String> updatedFields) throws ContentFragmentException, PersistenceException {
-        String cfTitle = Objects.nonNull(properties.get("prompt",String.class))?properties.get("prompt",String.class):"AI Generated CF";
-        Resource templateOrModelRsc = resourceResolver.getResource(model);
+    private void createNewFragment(ValueMap properties, ResourceResolver resourceResolver,List<String> updatedFields,String aiImageUrl) throws Exception {
+        String damImagePath = saveImageToDAM(aiImageUrl,resourceResolver);
+        String cfTitle = properties.get("title",String.class);
+        Resource templateOrModelRsc = resourceResolver.getResource("/conf/sumit/settings/dam/cfm/models/dxp-aem-demo");
         FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
         Resource parent = resourceResolver.resolve(OpenAIConstants.DAM_ROOT_AI);
         ContentFragment aiFragment = tpl.createFragment(parent, cfTitle.toLowerCase(), cfTitle);
@@ -114,19 +121,17 @@ public class OpenAIContentFragmentEventListener implements EventListener {
                 String value = properties.get(field, String.class);
                 if (value != null) {
                     switch (field) {
-                        case "prompt":
+                        case "title":
+                        case "imagePath":
+                        case "keywords":
                             try {
                                 aiFragment.getElement(field).setContent(value, "text/plain");
                             } catch (ContentFragmentException e) {
                                 throw new RuntimeException(e);
                             }
                             break;
-                        case "shortWarmthSummary":
-                        case "shortAggressiveSummary":
-                        case "shortFormalSummary":
-                        case "detailedWarmthSummary":
-                        case "detailedAggressiveSummary":
-                        case "detailedFormalSummary":
+                        case "description":
+                        case "summary":
                             try {
                                 aiFragment.getElement(field).setContent(value, "text/html");
                             } catch (ContentFragmentException e) {
@@ -143,6 +148,39 @@ public class OpenAIContentFragmentEventListener implements EventListener {
 
 
 
+    }
+
+    private String saveImageToDAM(String aiImagePath,ResourceResolver resourceResolver) throws Exception {
+        InputStream is = null;
+        String imagePath = null;
+        String mimeType = "";
+        try {
+
+            // Open a connection to the remote image URL
+            URL Url = new URL(aiImagePath);
+            URLConnection uCon = Url.openConnection();
+            is = uCon.getInputStream();
+            mimeType = uCon.getContentType();
+
+            // Create the asset in the DAM
+            String fileExt = mimeType.replaceAll("image/", "");
+            imagePath = "/content/dam/ai-generated" + "/" + "ai" + "." + fileExt;
+            resourceResolver.adaptTo(AssetManager.class).createAsset(imagePath, is, mimeType, true);
+            //updateImageProperties(resourceResolver, imagePath, inputData.getComponentpath());
+
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        } finally {
+            // Close the InputStream
+            try {
+                if (is != null) {
+                    is.close();
+                }
+            } catch (IOException e) {
+
+            }
+        }
+        return imagePath;
     }
 
     @Deactivate
