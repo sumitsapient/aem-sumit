@@ -16,11 +16,21 @@ public class OpenAIOSGIConfigImpl implements OpenAIConfig{
 
     private String secret;
 
+    private String role;
+
+    private String model;
+
+    private String imageGenerateAPI;
+
+
     @Activate
     protected void activate(OpenAIOSGIConfig config) {
         host = config.hostName();
         uri = config.uriType();
         secret = config.apiKey();
+        role = config.role();
+        model = config.role();
+        imageGenerateAPI = config.imageGenerationAPI();
     }
 
     @Override
@@ -37,4 +47,13 @@ public class OpenAIOSGIConfigImpl implements OpenAIConfig{
     public String getApiKey() {
         return secret;
     }
+
+    @Override
+    public String getRole() { return role; }
+
+    @Override
+    public String getModel() { return model; }
+
+    @Override
+    public String getImageGenerationAPI() { return imageGenerateAPI;}
 }

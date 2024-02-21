@@ -7,4 +7,11 @@ public interface OpenAIConfig {
     public String getUriType();
 
     public String getApiKey();
+
+    public String getRole();
+
+    public String getModel();
+
+    public String getImageGenerationAPI();
+
 }
